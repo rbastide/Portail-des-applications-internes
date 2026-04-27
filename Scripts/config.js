@@ -36,7 +36,7 @@ const structures = {
     "all":{
         name:"Tout",
         applications : allTools
-    }
+    },
 
 };
 
