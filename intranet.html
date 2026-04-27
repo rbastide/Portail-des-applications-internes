@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- Entête -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portail des applications internes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@animxyz/core" />
+    <script src="Scripts/helpers/dateTime.js"></script>
+    <script src="Scripts/helpers/utils.js"></script>
+    <script src="Scripts/helpers/toggleTheme.js"></script>
+    <script src="Scripts/config.js"></script>
+    <script src="Scripts/data/applicationsMetadata.js"></script>
+    <script src="Scripts/helpers/favoriteScript.js"></script>
+    <script src="Scripts/helpers/displayScript.js"></script>
+    <script src="Scripts/applicationDisplay.js"></script>
+    <script src="Scripts/data/urlApplication.js"></script>
+</head>
+
+<body>
+    <!-- Header affichant la date-->
+    <header>
+        Portail des applications internes
+        <img alt="Logo - Grand Périgueux" class="logo-clair" src="images/Logos/Logo_noir.png">
+        <img alt="Logo - Grand Périgueux" class="logo-sombre" src="images/Logos/Logo_blanc.png">
+        
+        <div>
+            <button id="switchTheme" class="theme-toggle xyz" title="Basculer le thème sombre" xyz="fade" data-click-count="0">
+                <i class="fa fa-moon-o" aria-hidden="true"></i>
+            </button>
+            <div id="datetime"></div>
+        </div>
+    </header>
+
+
+    <div id="id61551992e9924" a='{"t":"g7bs","v":"1.2","lang":"fr","locs":[26],"ssot":"c","sics":"ds","cbkg":"#1976D2","cfnt":"#FFFFFF","cend":"#FFFFFF00","eln":"bool"}'>
+        Source des données météo: 
+        <a href="https://meteolabs.fr/meteo_limoges/demain/">prévisions météo à Limoges demain</a>
+    </div>
+    <script async src="https://static1.meteolabs.fr/widgetjs/?id=id61551992e9924"></script>
+        
+<div class="box">
+
+
+    <div class="search-box">
+      <input type="text" name="" id="research" class="search-txt" placeholder="Faites une recherche privée 🦆" onkeydown="handleEnter(event)"/>
+      <a class="search-btn" href="" target="_blank">
+        <i class="fa fa-search" id="research-icon" aria-hidden="true" onclick="researchOnDuckDuckGo()"></i>
+      </a>
+    </div>
+
+
+    <div class="filter-box">
+        <button class="button-filter active" onclick="displayAll()">Tous</button>
+        <button class="button-filter" onclick="displayCategory('favoris')">Favoris</button>
+        <button class="button-filter" onclick="displayCategory('applicationCommunes')">Communes</button>
+        <button class="button-filter" onclick="displayCategory('applicationMetier')">Métiers</button>
+    </div>
+    
+</div>
+    
+
+
+    <div class="container">
+
+
+        <div class="favoris">
+            <div class="category-header">
+                <button class="toggle-btn" onclick="toggleCategory(this)" aria-expanded="true">
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <p>Favoris</p>
+            </div>
+        </div>
+
+        
+        <div class="applicationCommunes">
+            <div class="category-header">
+                <button class="toggle-btn" onclick="toggleCategory(this)" aria-expanded="true">
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <p>Communes</p>
+            </div>
+            <div class="apps-container open" aria-placeholder="applicationCommunes-placeholder">
+
+            
+                
+            </div>
+        </div>
+
+        <div class="applicationMetier">
+            <div class="category-header">
+                <button class="toggle-btn" onclick="toggleCategory(this)" aria-expanded="true">
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <p>Métier</p>
+            </div>
+            <div class="apps-container open" aria-placeholder="applicationMetier-placeholder">
+
+            
+                
+            </div>
+        </div>
+
+
+    </div>
+</body>
+    <!-- Footer -->
+    <footer>
+
+        <div class="logo-footer">
+            <img src="images/Logos/Logo_blanc.png" alt="Logo - Grand Périgueux">
+        </div>
+
+        <div class="infos">
+
+                <div>
+                    <h2>Adresse</h2>
+                    <p>255 rue Martha Desrumaux 24000 PÉRIGUEUX
+                    </p>
+                </div>
+
+                <div>
+                    <h2>Horaires</h2>
+                    <p>Lundi au jeudi 8h30-12h30 | 13h30-17h30</p>
+                    <p>Vendredi 8h30-12h30 | 13h30-17h00</p>
+                </div>
+
+                
+
+                <div>
+                    <h2>Contact</h2>
+                    <a href="https://mesdemarches.grandperigueux.fr/portals/public/forum?identifiant_portail=forum&page=GRU_ECR_AvantDeCommencer&id_ts=10">Formulaire de contact</a>
+                    <p>Allo Agglo 05 53 35 86 00</p>
+                </div>
+
+                <div class="serviceSI">© Service SI - Grand Périgueux</div>
+
+            </div>
+
+    </footer>
+
+    <div class="charte">
+        <ul>
+            <li><a href="https://www.grandperigueux.fr/confidentialite-et-vie-privee/">Confidentialité</a></li>
+            <li>Accessibilité : <a href="https://www.grandperigueux.fr/accessibilite/">partiellement conforme</a></li>
+            <li><a href="https://www.grandperigueux.fr/mentions-legales-2/">Mentions légales</a></li>
+            <li><a href="https://www.grandperigueux.fr/plan-du-site/">Plan du site</a></li>
+            <li>Crédits : <a href="https://rbastide.github.io/Portfolio/">Rémi Bastide</a></li>
+        </ul>
+    </div>
+
+
+</html>
