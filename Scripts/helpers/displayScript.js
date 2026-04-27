@@ -14,8 +14,12 @@ function displayAll() {
     // Mettre à jour le bouton actif
     const buttons = document.querySelectorAll('.button-filter');
     buttons.forEach(button => button.classList.remove('active'));
-    if (buttons.length > 0) {
-        buttons[0].classList.add('active');
+    // Trouver le bouton "Tous" par son contenu textuel et l'activer
+    const allButton = Array.from(buttons).find(button =>
+        button.textContent.toLowerCase().trim() === 'tous'
+    );
+    if (allButton) {
+        allButton.classList.add('active');
     }
 }
 
@@ -35,8 +39,18 @@ function displayCategory(categoryName) {
     const buttons = document.querySelectorAll('.button-filter');
     buttons.forEach(button => button.classList.remove('active'));
 
+    // Créer une correspondance entre le nom de la classe de catégorie et le texte attendu du bouton
+    // (en minuscules et sans espaces)
+    const categoryClassToButtonTextMap = {
+        'favoris': 'favoris',
+        'applicationCommunes': 'communes',
+        'applicationMetier': 'metiers',
+    };
+
+    const expectedButtonText = categoryClassToButtonTextMap[categoryName];
+
     const activeButton = Array.from(buttons).find(button =>
-        button.textContent.toLowerCase() === categoryName
+        expectedButtonText && button.textContent.toLowerCase().trim() === expectedButtonText
     );
     if (activeButton) {
         activeButton.classList.add('active');
