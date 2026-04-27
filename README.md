@@ -1,4 +1,4 @@
-# Portail des applications internes – Installation & Lancement
+D# Portail des applications internes – Installation & Lancement
 
 Ce document explique comment installer le projet, configurer le fichier `urls.json` et lancer l’application.
 
@@ -54,7 +54,9 @@ Pour changer de structure :
 
 - Aller dans la barre de domaine en haut de votre navigateur et modifier le contenu après le "=" par une structure déjà existante (voir étape structure)
 
-image a mettre
+<img width="363" height="37" alt="image" src="https://github.com/user-attachments/assets/d2617f23-a8ae-4e4a-8b65-caa6fafb2ba9" />
+
+<img width="400" height="41" alt="image" src="https://github.com/user-attachments/assets/8efa6625-3f57-42b8-89c8-9268ae776a55" />
 
 ---
 
@@ -123,7 +125,7 @@ Pour ajouter une catégorie il faut :
 
 - Ajouter la classe de votre catégorie dans le fichier style.css, à la ligne 108, il y est censé avoir : 
 
-image a mettre (screen css catégorie)
+<img width="627" height="144" alt="image" src="https://github.com/user-attachments/assets/d3404bb4-54c1-412a-82bf-bdaf18fcaeec" />
 
 Renseignez votre classe
 
