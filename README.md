@@ -144,11 +144,17 @@ Renseignez votre classe
   const categories = ['favoris', 'applicationCommunes','applicationMetier','Nom de la catégorie'];
 ```
 
-- Pour finir, ajouter le nom de catégorie en plus d'un . au début du mot dans le tableau categories du fichier displayScript.js
+- Enfin, ajouter le nom de catégorie en plus d'un . au début du mot dans le tableau categories du fichier displayScript.js
 ```js
 const categories = document.querySelectorAll('.favoris, .applicationMetier, .applicationCommunes','.Nom de la catégorie');
 ```
 - Répéter les mêmes méthodes pour les fonctions : displayCategory() et displayAll()
+- Pour finir, dans le fichier displayScript.js, modifier le tableau categoryClassToButtonTextMap :
+```js
+const categoryClassToButtonTextMap = {
+    'nom_categorie' : 'nom_box_categorie'
+};
+```
 
 ---
 
