@@ -148,7 +148,7 @@ Renseignez votre classe
 ```js
 const categories = document.querySelectorAll('.favoris, .applicationMetier, .applicationCommunes','.Nom de la catégorie');
 ```
-    - Répéter les mêmes méthodes pour les fonctions : displayCategory() et displayAll()
+- Répéter les mêmes méthodes pour les fonctions : displayCategory() et displayAll()
 
 ---
 
