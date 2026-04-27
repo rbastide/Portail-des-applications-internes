@@ -149,7 +149,7 @@ Renseignez votre classe
 const categories = document.querySelectorAll('.favoris, .applicationMetier, .applicationCommunes','.Nom de la catégorie');
 ```
 - Répéter les mêmes méthodes pour les fonctions : displayCategory() et displayAll()
-- Pour finir, dans la fichier displayScript.js, modifier le tableau categoryClassToButtonTextMap :
+- Pour finir, dans le fichier displayScript.js, modifier le tableau categoryClassToButtonTextMap :
 ```js
 const categoryClassToButtonTextMap = {
     'nom_categorie' : 'nom_box_categorie'
