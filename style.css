@@ -351,7 +351,7 @@ a.app:active {
         outline: none;
         background:none;
         float: left;
-        color: white;
+        color: black;
         font-size: 16px;
         transition: 0.4s;
         line-height: 35px;
@@ -405,6 +405,10 @@ a.app:active {
 
       body.dark-mode .search-box:hover > .search-btn {
         background: #333;
+        color: white;
+      }
+
+      body.dark-mode .search-txt {
         color: white;
       }
 
@@ -637,4 +641,4 @@ a.app:active {
         .charte li:not(:last-child)::after {
           content: none;
         }
-      }
+      }

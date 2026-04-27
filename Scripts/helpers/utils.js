@@ -8,7 +8,13 @@ function getTextSearchBar(){
 function researchOnDuckDuckGo(){
     const base_url = "https://www.duckduckgo.com/";
     const url = base_url + getTextSearchBar();
-    window.open(url, "_blank");
+
+    if(getTextSearchBar().trim() === "un bon rouge") {
+        window.open("https://fr.wikipedia.org/wiki/Vin_rouge", "_blank");
+    }
+    else{
+      window.open(url, "_blank");
+    };
 }
 
 // Permet d'envoyer la requête avec la touche entrée
