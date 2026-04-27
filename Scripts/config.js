@@ -6,7 +6,7 @@
 
 const commonTools = ["duckduckgo","qwant","google","annuaire","listmonk","assistance_informatique","intervention_technique","editeur_pdf","gestionnaire_totp","outlook","teams","forms","onenote","booking","planner"];
 
-const allTools = ["glpi","perigeo","duckduckgo","qwant","google","annuaire","listmonk","assistance_informatique","intervention_technique","editeur_pdf","gestionnaire_totp","outlook","teams","forms","onenote","booking","planner","hawk_manager","hawk_rt","ciril_net","i_parapheur","webdelib","slow","i_milo","mad","sirtaqui","i_parapheur","webdelib","slow","i_delibre"];
+const allTools = ["glpi","perigeo","hawk_manager","hawk_rt","ciril_net","i_parapheur","webdelib","slow","i_milo","mad","sirtaqui","i_parapheur","webdelib","slow","i_delibre"] + commonTools;
 
 const structures = {
     "perimouv": {
