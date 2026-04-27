@@ -78,21 +78,21 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
       assistance_informatique: {
         id: "assistance_informatique",
         title: "Assistance Informatique",
-        icon: "icons/glpi.png",
+        icon: "icons/customer-support.png",
         url: urls.assistance_informatique,
         category: "applicationCommunes"
       },
       intervention_technique: {
         id: "intervention_technique",
         title: "Intervention Technique",
-        icon: "Logos/Logo_blanc.png",
+        icon: "icons/intervention.jpg",
         url: urls.intervention_technique,
         category: "applicationCommunes"
       },
       gestionnaire_totp: {
         id: "gestionnaire_totp",
         title: "Gestionnaire TOTP",
-        icon: "icons/glpi.png",
+        icon: "icons/totp.ico",
         url: urls.gestionnaire_totp,
         category: "applicationCommunes"
       },

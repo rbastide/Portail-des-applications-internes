@@ -177,8 +177,8 @@ header img.logo-sombre {
   border: 0.2px solid black;
   padding: .7rem 1rem .8rem 2rem;
   display: inline-flex;
-  background: none;
-  color: white;
+  background: white;
+  color: black;
   font-size: 24px;
   letter-spacing: -1px;
   
@@ -187,7 +187,7 @@ header img.logo-sombre {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: 0;
     height: 100%;
     width: 100%;
     border-radius: 100vw;
@@ -227,7 +227,6 @@ header img.logo-sombre {
     }
     
     &::after {
-      background: white;
       color: #60adf3;
     }
   }
