@@ -1,6 +1,6 @@
 // Affiche toutes les applications de toutes les catégories
 function displayAll() {
-    const categories = document.querySelectorAll('.favoris, .applicationMetier, .applicationCommunes');
+    const categories = document.querySelectorAll('.favoris, .applicationCommunes, .applicationMetier');
     categories.forEach(category => {
         // On vérifie si la catégorie possède des applications avant de l'afficher
         const container = category.querySelector('.apps-container');
@@ -22,7 +22,7 @@ function displayAll() {
 
 // Affiche toutes les applications appartenant à une catégorie en particulier
 function displayCategory(categoryName) {
-    const categories = document.querySelectorAll('.favoris, .applicationMetier, .applicationCommunes');
+    const categories = document.querySelectorAll('.favoris, .applicationCommunes, .applicationMetier');
     categories.forEach(category => {
         if (category.classList.contains(categoryName)) {
             category.style.display = 'flex';
