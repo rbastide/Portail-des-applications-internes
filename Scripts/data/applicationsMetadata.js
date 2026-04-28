@@ -18,7 +18,7 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
     const urls = await response.json();
 
     applicationsMetadata = {
-      
+
       // Applications communes
       duckduckgo: {
         id: "duckduckgo",
@@ -30,7 +30,7 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
       qwant: {
         id: "qwant",
         title: "Qwant",
-        icon: "icons/qwant.png",
+        icon: "icons/qwant.ico",
         url: "https://www.qwant.com/?l=fr",
         category: "applicationCommunes"
       },
@@ -58,7 +58,7 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
       booking: {
         id: "booking",
         title: "Booking",
-        icon: "icons/booking.png",
+        icon: "icons/booking.ico",
         url: "https://bookings.cloud.microsoft/",
         category: "applicationCommunes"
       },
@@ -72,7 +72,7 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
       planner: {
         id: "planner",
         title: "Planner",
-        icon: "icons/planner.png",
+        icon: "icons/planner.ico",
         url: "https://planner.cloud.microsoft/",
         category: "applicationCommunes"
       },
@@ -86,7 +86,7 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
       intervention_technique: {
         id: "intervention_technique",
         title: "Intervention Technique",
-        icon: "icons/intervention.jpg",
+        icon: "icons/intervention.png",
         url: urls.intervention_technique,
         category: "applicationCommunes"
       },
@@ -137,14 +137,14 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
       hawk_manager: {
         id: "hawk_manager",
         title: "Hawk Manager",
-        icon: "icons/hanover.png",
+        icon: "icons/hanover.ico",
         url: urls.hawk_manager,
         category: "applicationMetier"
       },
       hawk_rt: {
         id: "hawk_rt",
         title: "Hawk RT",
-        icon: "icons/hanover.png",
+        icon: "icons/hanover.ico",
         url: urls.hawk_rt,
         category: "applicationMetier"
       },
@@ -172,7 +172,7 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
       ciril_net: {
         id: "ciril_net",
         title: "Ciril-Net",
-        icon: "icons/civil.png",
+        icon: "icons/civil.ico",
         url: urls.ciril_net,
         category: "applicationMetier"
       },
