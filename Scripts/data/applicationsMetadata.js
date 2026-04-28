@@ -18,6 +18,7 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
     const urls = await response.json();
 
     applicationsMetadata = {
+      
       // Applications communes
       duckduckgo: {
         id: "duckduckgo",
