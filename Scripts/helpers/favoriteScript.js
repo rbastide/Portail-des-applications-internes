@@ -33,7 +33,7 @@ function renderFavorites() {
         const activeButton = document.querySelector('.button-filter.active');
         const activeFilterText = activeButton ? activeButton.textContent.toLowerCase().trim() : 'tous';
         
-        if (activeFilterText === 'tous' || activeFilterText === 'favoris') {
+        if (activeFilterText === 'toutes' || activeFilterText === 'favoris') {
             favoritesSection.style.display = 'flex'; 
         }
         // On réaffiche les filtres dans tous les cas puisqu'il y a des favoris

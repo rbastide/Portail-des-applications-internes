@@ -1,4 +1,16 @@
 /* --- 1. GLOBALS & BASE ELEMENTS --- */
+:root {
+    --primary-color: #60adf3;
+    --white: #ffffff;
+    --black: #000000;
+    --dark-gray: #333;
+    --gray: #808080;
+    --gold: #ffd700;
+    --p-footer-color: #a4c9ef;
+    --animate-duration: 2.5s;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -28,8 +40,8 @@ header {
     font-weight: 700;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
-    color: black;
+    background-color: var(--white);
+    color: var(--black);
     padding: 20px;
     font-size: 2.2em;
     transition: background-color 0.4s ease, color 0.4s ease;
@@ -66,9 +78,8 @@ header img.logo-sombre {
     margin-right: 50px;
     font-size: 1.2em;
     cursor: pointer;
-    color: black;
+    color: var(--black);
     transition: all 0.3s ease;
-    --animate-duration: 2.5s;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -99,7 +110,7 @@ header img.logo-sombre {
     left: 20px;
     top: 50%;
     transform: translateY(-50%);
-    background: white;
+    background: var(--white);
     height: 35px;
     border-radius: 40px;
     padding: 10px;
@@ -107,22 +118,22 @@ header img.logo-sombre {
 }
 
 .search-box:hover > .search-btn {
-    background: white;
-    color: black;
+    background: var(--white);
+    color: var(--black);
 }
 
 .search-btn {
-    color: #eeeeee;
+    color: var(--white);
     float: right;
     width: 40px;
     height: 35px;
     border-radius: 50%;
-    background: black;
+    background: var(--black);
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.4s;
-    color: white;
+    color: var(--white);
     cursor: pointer;
     text-decoration: none;
 }
@@ -136,7 +147,7 @@ header img.logo-sombre {
     outline: none;
     background:none;
     float: left;
-    color: black;
+    color: var(--black);
     font-size: 16px;
     transition: 0.4s;
     line-height: 35px;
@@ -160,8 +171,8 @@ header img.logo-sombre {
     padding: 10px;
     font-size: 1em;
     border-radius: 5px;
-    border: 2px solid black;
-    background: white;
+    border: 2px solid var(--black);
+    background: var(--white);
     font-family: Oswald, sans-serif;
     font-weight: 700;
     cursor: pointer;
@@ -174,11 +185,11 @@ header img.logo-sombre {
   position: relative;
   border-radius: 100vw;
   margin: 0;
-  border: 0.2px solid black;
+  border: 0.2px solid var(--black);
   padding: .7rem 1rem .8rem 2rem;
   display: inline-flex;
-  background: white;
-  color: black;
+  background: var(--white);
+  color: var(--black);
   font-size: 24px;
   letter-spacing: -1px;
   
@@ -193,7 +204,7 @@ header img.logo-sombre {
     border-radius: 100vw;
     background-image: linear-gradient(
       -35deg, 
-      #60adf3, 
+      var(--primary-color), 
       transparent 70%
     );
     opacity: 0;
@@ -212,8 +223,8 @@ header img.logo-sombre {
     padding: 4px;
     margin-left: .65rem;
     border-radius: 100vw;
-    background: #ffffff;
-    color: black;
+    background: var(--white);
+    color: var(--black);
     font-size: .75em;
     line-height: 0;
     transform: translateY(2px);
@@ -227,15 +238,15 @@ header img.logo-sombre {
     }
     
     &::after {
-      color: #60adf3;
+      color: var(--primary-color);
     }
   }
 }
 
 .button-filter.active {
-    background: #8ed1fc;
-    border-color: black;
-    color: black;
+    background: var(--primary-color);
+    border-color: var(--black);
+    color: var(--black);
 }
 
 /* --- 6. MAIN CONTENT & CATEGORIES --- */
@@ -266,7 +277,7 @@ header img.logo-sombre {
     font-size: 1.5em;
     font-family: Oswald, sans-serif;
     font-weight: 700;
-    color: black;
+    color: var(--black);
     margin: 0;
     border-bottom: 2px solid rgba(0, 0, 0, 0.5);
     padding-bottom: 10px;
@@ -278,7 +289,7 @@ header img.logo-sombre {
     border: none;
     cursor: pointer;
     font-size: 1.2em;
-    color: black;
+    color: var(--black);
     padding: 5px 10px;
     display: flex;
     align-items: center;
@@ -331,7 +342,7 @@ header img.logo-sombre {
 }
 
 .app:hover {
-    background: rgb(255,255,255); /* Opacité complète au survol */
+    background: var(--white); /* Opacité complète au survol */
     scale: 1.1; /* Agrandissement de 5% au survol */
 }
 
@@ -345,17 +356,17 @@ header img.logo-sombre {
     text-decoration: none;
     margin-top: 10px;
     font-weight: bold;
-    color: #333;
+    color: var(--dark-gray);
 }
 
 .app i{
     position:absolute;
     right: 10%;
-    color: gray;
+    color: var(--gray);
 }
 
 .app i:hover{
-    color: gold;
+    color: var(--gold);
 }
 
 /* Animation décalée pour les icônes d'application */
@@ -383,7 +394,7 @@ footer {
     margin-top: 10%;
     font-size: 1.1em;
     padding: 40px 20px;
-    color: gray;
+    color: var(--gray);
     background-image: url(https://www.grandperigueux.fr/app/uploads/2025/09/content.png);
     display: flex;
     flex-direction: column;
@@ -410,7 +421,7 @@ footer .logo-footer img {
 footer .infos {
     flex: 1;
     width: 100%;
-    color: white;
+    color: var(--white);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -429,7 +440,7 @@ footer .infos div {
 footer h2 {
     margin: 0 0 10px 0;
     text-decoration: none;
-    color: #60adf3;
+    color: var(--primary-color);
 }
 
 footer p {
@@ -441,7 +452,7 @@ footer a {
     text-decoration: underline;
     color: inherit;
     transition: opacity 0.3s ease;
-    color: #a4c9ef ;
+    color: var(--p-footer-color);
     font-weight: 600;
 }
 
@@ -450,8 +461,8 @@ footer a:hover {
 }
 
 .charte{
-    background:white;
-    color: black;
+    background:var(--white);
+    color: var(--black);
     text-decoration: none;
     font-family: Oswald, sans-serif;
     font-weight: 400;
@@ -493,12 +504,12 @@ footer a:hover {
 body.dark-mode {
     /* Voile noir semi-transparent pour assombrir l'image de fond */
     background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.75)), url("images/espace_alienor.jpg");
-    color: #f1f1f1;
+    color: var(--white);
 }
 
 body.dark-mode header {
-    background-color: #1a1a1a;
-    color: #f1f1f1;
+    background-color: var(--black);
+    color: var(--white);
 }
 
 body.dark-mode header img {
@@ -517,29 +528,29 @@ body.dark-mode header img.logo-sombre {
 }
 
 body.dark-mode .theme-toggle {
-    color: #f1f1f1;
+    color: var(--white);
 }
 
 body.dark-mode .search-box {
-    background: #333;
+    background: var(--dark-gray);
 }
 
 body.dark-mode .search-box:hover > .search-btn {
-    background: #333;
-    color: white;
+    background: var(--dark-gray);
+    color: var(--white);
 }
 
 body.dark-mode .search-txt {
-    color: white;
+    color: var(--white);
 }
 
 body.dark-mode .category-header p {
-    color: #f1f1f1;
+    color: var(--white);
     border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 body.dark-mode .toggle-btn {
-    color: #f1f1f1;
+    color: var(--white);
 }
 
 body.dark-mode .toggle-btn:hover {
@@ -552,31 +563,31 @@ body.dark-mode .app {
 }
 
 body.dark-mode .app:hover {
-    background: rgb(60, 60, 60);
+    background: var(--dark-gray);
 }
 
 body.dark-mode .app-title {
-    color: #e0e0e0;
+    color: var(--white);
 }
 
 body.dark-mode .espace {
-    background-color: #1a1a1a;
+    background-color: var(--black);
 }
 
 body.dark-mode footer {
-    background-color: #1a1a1a;
-    color: #e0e0e0;
+    background-color: var(--black);
+    color: var(--white);
 }
 
 .dark-mode .charte{
-    background: black;
-    color: white;
+    background: var(--black);
+    color: var(--white);
 }
 
 .dark-mode .button-filter {
-    background: #333;
-    border-color: #f1f1f1;
-    color: #f1f1f1;
+    background: var(--dark-gray);
+    border-color: var(--white);
+    color: var(--white);
 }
 
 .dark-mode .button-filter:hover {
@@ -584,9 +595,9 @@ body.dark-mode footer {
 }
 
 .dark-mode .button-filter.active {
-    background: #8ed1fc;
-    border-color: #f1f1f1;
-    color: black;
+    background: var(--primary-color);
+    border-color: var(--white);
+    color: var(--black);
 }
 
 /* --- 10. ANIMATIONS --- */

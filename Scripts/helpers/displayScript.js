@@ -15,9 +15,10 @@ function displayAll() {
     const buttons = document.querySelectorAll('.button-filter');
     buttons.forEach(button => button.classList.remove('active'));
     // Trouver le bouton "Tous" par son contenu textuel et l'activer
-    const allButton = Array.from(buttons).find(button =>
-        button.textContent.toLowerCase().trim() === 'tous'
-    );
+    const allButton = Array.from(buttons).find(button => {
+        const text = button.textContent.toLowerCase().trim();
+        return text === 'toutes'
+    });
     if (allButton) {
         allButton.classList.add('active');
     }
