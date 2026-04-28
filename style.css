@@ -223,7 +223,7 @@ header img.logo-sombre {
     padding: 4px;
     margin-left: .65rem;
     border-radius: 100vw;
-    background: var(--white);
+    background: rgba(128, 128, 128, 0.253);
     color: var(--black);
     font-size: .75em;
     line-height: 0;
