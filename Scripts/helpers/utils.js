@@ -15,6 +15,8 @@ function researchOnDuckDuckGo(){
     else{
       window.open(url, "_blank");
     };
+
+    document.getElementById("research").value = "";
 }
 
 // Permet d'envoyer la requête avec la touche entrée
