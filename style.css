@@ -194,7 +194,7 @@ header img.logo-sombre {
     background-image: linear-gradient(
       -35deg, 
       #60adf3, 
-      transparent 100%
+      transparent 70%
     );
     opacity: 0;
     transform: translateX(-100%);
