@@ -1,4 +1,4 @@
-D# Portail des applications internes – Installation & Lancement
+# Portail des applications internes – Installation & Lancement
 
 Ce document explique comment installer le projet, configurer le fichier `urls.json` et lancer l’application.
 
