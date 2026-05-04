@@ -1,4 +1,4 @@
-/* --- 1. GLOBALS & BASE ELEMENTS --- */
+/* --- VARIABLES GLOBALES --- */
 :root {
     --primary-color: #60adf3;
     --white: #ffffff;
@@ -33,7 +33,7 @@ a.app:active {
     color: inherit; /* garde la couleur définie par .app-title */
 }
 
-/* --- 2. HEADER AREA --- */
+/* --- 2. HEADER --- */
 header {
     display: flex;
     font-family: Oswald, sans-serif;
@@ -54,6 +54,7 @@ header > div:last-child {
     gap: 10px;
 }
 
+/* Images du header */
 header img {
     height: 100px;
     margin-right: 100px;
@@ -61,10 +62,12 @@ header img {
     object-position: center;
 }
 
+/* Images du header thème sombre */
 header img.logo-sombre {
     display: none;
 }
 
+/* Date + heure du header */
 #datetime {
     font-size: 0.7em;
     text-align: right;
@@ -89,6 +92,7 @@ header img.logo-sombre {
     transform-origin: center center;
 }
 
+/* Animation secrète du toggle button*/
 .theme-toggle.xyz-in {
     animation: themeToggleSpinDown var(--animate-duration) ease-in-out forwards;
 }
@@ -97,7 +101,7 @@ header img.logo-sombre {
     transform: scale(0.95);
 }
 
-/* --- 4. SEARCH AREA --- */
+/* --- 4. SEARCHBOX --- */
 .box {
     position: relative;
     width: 100%;
@@ -105,6 +109,7 @@ header img.logo-sombre {
     margin-top: 50px;
 }
 
+/* Boite de recherche*/
 .search-box {
     position: absolute;
     left: 20px;
@@ -117,11 +122,13 @@ header img.logo-sombre {
     width: 400px;
 }
 
+/* Animation de la boite de recherche au survol*/
 .search-box:hover > .search-btn {
     background: var(--white);
     color: var(--black);
 }
 
+/* Bouton de la boite de recherche*/
 .search-btn {
     color: var(--white);
     float: right;
@@ -166,6 +173,7 @@ header img.logo-sombre {
     gap: 30px;
 }
 
+/* Style du cadre des boutons du filtre */
 .filter-choice {
     margin-top: 20px;
     padding: 10px;
@@ -178,7 +186,7 @@ header img.logo-sombre {
     cursor: pointer;
     transition: transform 0.3s ease, scale 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
-
+/* Style/Animation des boutons de filtre*/
 .button-filter {
   cursor: pointer;
   overflow: hidden;
@@ -260,18 +268,22 @@ header img.logo-sombre {
     margin-top: 100px;
 }
 
+
+/* Style des catégories */
 .favoris, .applicationCommunes, .applicationMetier {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
+/* Header de la catégorie */
 .category-header {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
+/* Style des paragraphes du header */
 .category-header p {
     text-align: left;
     font-size: 1.5em;
@@ -284,6 +296,7 @@ header img.logo-sombre {
     flex: 1;
 }
 
+/* Bouton d'ouverture/fermeture des catégories */
 .toggle-btn {
     background: none;
     border: none;
@@ -299,11 +312,13 @@ header img.logo-sombre {
     height: 40px;
 }
 
+/* Survol du bouton toggle */
 .toggle-btn:hover {
     background: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
 
+/* Lorsque le bouton est cliqué*/
 .toggle-btn.collapsed {
     transform: rotate(-90deg);
 }
@@ -320,12 +335,13 @@ header img.logo-sombre {
     opacity: 1;
     padding: 20px 30px;
 }
-
+/* Si la catégorie est fermé */
 .apps-container.closed {
     max-height: 0;
     opacity: 0;
 }
 
+/* Style de chaque application */
 .app {
     width: 150px; /* Donne une largeur fixe aux cases (anciennement géré par la grille) */
     display: flex;
@@ -341,11 +357,13 @@ header img.logo-sombre {
     transition: transform 0.3s ease, scale 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Survol de l'application */
 .app:hover {
     background: var(--white); /* Opacité complète au survol */
     scale: 1.1; /* Agrandissement de 5% au survol */
 }
 
+/* Image de l'application */
 .app img {
     width: 64px;
     height: 64px;
@@ -405,6 +423,7 @@ footer {
     font-family: Oswald, sans-serif;
 }
 
+/* Logo du footer */
 footer .logo-footer {
     display: flex;
     align-items: center;
