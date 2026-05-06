@@ -217,10 +217,6 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
   }
 }
 
-// Renvoie la donnée d'une applications en particulière
-function getApplicationMetadata(appId) {
-  return applicationsMetadata[appId];
-}
 // Renvoie toutes les données des applications
 function getAllApplications() {
   return Object.values(applicationsMetadata);
