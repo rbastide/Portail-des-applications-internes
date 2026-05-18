@@ -15,7 +15,7 @@ const structures = {
     },
     "cias": {
         name: "CIAS",
-        applications: ["mad", "ciril_net","i_parapheur","webdelib","slow"] + commonTools
+        applications: ["mad","domatel","nfcTagAndPlay","free2Move","medecineCDG24","CNAS","portail_ressources","arche_MC2_assistance","my_ayvens_manager","visualAA","total_energie","carte_carburant","net_entreprise","cdg24","MNT","france_travail_accueil","france_travail_employeur","france_travail_convention","URSSAF","URSSAF_mandataire","CIGAC","IRCEM","edenred","fabregue","collecteam_prevoyance","collecteam_espacerh","CNP_assurance","PEPS","CPAM","CNFPT","indeed","autorite_sante","assurance_maladie","ministere_justice","CARSAT","CNRACL"] + commonTools
     },
     "ml/mde": {
         name: "ML / MDE",
