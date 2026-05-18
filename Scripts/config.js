@@ -15,11 +15,11 @@ const structures = {
     },
     "cias": {
         name: "CIAS",
-        applications: ["mad","domatel","nfcTagAndPlay","free2Move","medecineCDG24","CNAS","portail_ressources","arche_MC2_assistance","my_ayvens_manager","visualAA","total_energie","carte_carburant","net_entreprise","cdg24","MNT","france_travail_accueil","france_travail_employeur","france_travail_convention","URSSAF","URSSAF_mandataire","CIGAC","IRCEM","edenred","fabregue","collecteam_prevoyance","collecteam_espacerh","CNP_assurance","PEPS","CPAM","CNFPT","indeed","autorite_sante","assurance_maladie","ministere_justice","CARSAT","CNRACL"] + commonTools
+        applications: ["mad","domatel","nfcTagAndPlay","free2Move","medecineCDG24","CNAS","portail_ressources","arche_MC2_assistance","my_ayvens_manager","visualAA","total_energie","carte_carburant","net_entreprise","cdg24","MNT","france_travail_accueil_pro","france_travail_employeur","france_travail_convention","URSSAF","URSSAF_mandataire","CIGAC","IRCEM","edenred","fabregue","collecteam_prevoyance","collecteam_espacerh","CNP_assurance","PEPS","CPAM","CNFPT","indeed","autorite_sante","assurance_maladie","ministere_justice","CARSAT","CNRACL"] + commonTools
     },
     "ml/mde": {
         name: "ML / MDE",
-        applications: ["i_milo"] + commonTools
+        applications: ["i_milo","veloce","dude","manatime","nouvelle_aquitaine","france_travail_accueil","CAF","impot","canva","ANTS","ameli","service_civique","AGEFIPH","CAP_metier","logement_sociale","emploi_inclusion","copilot","milona","evennements_emploi","immersion_facilite"] + commonTools
     },
     "silot": {
         name: "Silot",

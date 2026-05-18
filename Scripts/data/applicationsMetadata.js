@@ -215,7 +215,7 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
         id: "domatel",
         title: "Domatel",
         icon: "",
-        url: "https://mobile.domatel.fr",
+        url: urls.domatel,
         category: "applicationMetier"
       },
       NFC_tag_and_play:{
@@ -229,21 +229,21 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
         id: "free2Move",
         title: "Free2Move",
         icon: "",
-        url: "https://free2move-connectfleet.com",
+        url: urls.free2Move,
         category: "applicationMetier"
       },
       medecineCDG24:{
         id: "medecineCDG24",
         title: "Médecine CDG 24",
         icon: "",
-        url: "https://pst-cdg24.medtra.fr/accueil.html",
+        url: urls.medecineCDG24,
         category: "applicationMetier"
       },
       CNAS:{
         id: "CNAS",
         title: "CNAS",
         icon: "",
-        url: "https://le.cnas.fr/s/login/?ec=302&startURL=%2Fliste-des-beneficiairesr",
+        url: urls.cnas,
         category: "applicationMetier"
       },
       portail_ressources:{
@@ -257,14 +257,14 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
         id: "arche_MC2_assistance",
         title: "Arche-MC2 Assistance",
         icon: "",
-        url: "https://assistance.arche-mc2.fr/hc/fr",
+        url: urls.arche_MC2_assistance,
         category: "applicationMetier"
       },
       my_ayvens_manager :{
         id: "my_ayvens_manager",
         title: "My Ayvens Manager",
         icon: "",
-        url: "https://login.aldautomotive.fr/Account/Login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dmanager_ayvens_client%26response_type%3Dcode%2520id_token%2520token%26scope%3Dopenid%2520profile%2520email%2520offline_access%26state%3DOpenIdConnect.AuthenticationProperties%253DWFfxsm5AGiEavyayF-HhU7LwEW0sESbwX9zwRWFeCjUQUqutbVF3PhcW76X4iWkV8bdD3GarZ6ZoKP0K6ZSRjH9RrLnTmpVySA67X0bCwRAwaFIf9u_p115Obctn0ufvpr0GrpGxUT7IUI_9OnGc3I15cwwb-LpOj8op8hosu6yhPzFcp4i58VoaVQSxd1odTnCJDYm-WrZsvlxkJWi66Lb_uv4%26response_mode%3Dform_post%26nonce%3D639131399663669074.NmU5ZjNiOTMtMWI1Ny00NDMxLWEzYmItZjM0OGU5OWE0ZTllYjg5YmM1OTAtZjk1ZS00MjE3LWE4NjEtZjA1MDg1Mjk0M2Q5%26redirect_uri%3Dhttps%253A%252F%252Fmanager.ayvens.fr%252Fsignin-oidc%26post_logout_redirect_uri%3Dhttps%253A%252F%252Fmanager.ayvens.fr%26x-client-SKU%3DID_NET461%26x-client-ver%3D5.3.0.0",
+        url : urls.my_ayvens_manager,
         category: "applicationMetier"
       },
       visualAA :{
@@ -278,194 +278,317 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
         id: "total_energie",
         title: "Total Energie",
         icon: "",
-        url: "https://client.mobilitybusiness.totalenergies.com/signIn",
+        url: urls.total_energie,
         category: "applicationMetier"
       },
       carte_carburant :{
         id: "carte_carburant",
         title: "Carte Carburant",
         icon: "",
-        url: "https://www.lacartecarburant.com/",
+        url: urls.carte_carburant,
         category: "applicationMetier"
       },
       net_entreprise :{
         id: "net_entreprise",
         title: "Net-entreprises",
         icon: "",
-        url: "https://www.net-entreprises.fr/",
+        url: urls.net_entreprise,
         category: "applicationMetier"
       },
       cdg24 :{
         id: "cdg24",
         title: "CDG 24",
         icon: "",
-        url: "https://cdg-portal.arketeam.fr/CDG24/Accueil.aspx",
+        url: urls.cdg24 ,
         category: "applicationMetier"
       },
       MNT :{
         id: "MNT",
         title: "MNT",
         icon: "",
-        url: "https://employeur.mnt.fr/connexion",
+        url: urls.mnt,
         category: "applicationMetier"
       },
-      france_travail_accueil :{
-        id: "france_travail_accueil",
+      france_travail_accueil_pro :{
+        id: "france_travail_accueil_pro",
         title: "Accueil",
         icon: "",
-        url: "https://pro.francetravail.fr/accueil/choixauthentification",
+        url: urls.france_travail_accueil_pro,
         category: "applicationMetier"
       },
       france_travail_employeur :{
         id: "france_travail_employeur",
         title: "Employeur",
         icon: "",
-        url: "https://authentification-pro.francetravail.fr/connexion/XUI/?realm=/employeur&goto=https://authentification-pro.francetravail.fr/connexion/oauth2/realms/root/realms/employeur/authorize?realm%3Demployeur%26response_type%3Did_token%2520token%26scope%3DlectureProfil%2520lecturePromotionProfil%2520projetrecrut%2520mescvselectionnes%2520mescvselectionnesW%2520ami%2520amiW%2520mecRecruteurSurOffreEcriture%2520offre%2520offreW%2520nomenclature%2520openid%2520profile%2520email%2520phone%2520peconnect%2520habilitation%2520idIdentite%2520espaceEntreprise%2520infosentreprises%2520audienceProfilW%2520application_ENT-PN024-recrutement-5B4E77A95770B3DC1998BAD5912B718DAF678E1142DADBCB8D18A72661C16314%2520rechercheOu%26client_id%3DENT-PN024-recrutement-5B4E77A95770B3DC1998BAD5912B718DAF678E1142DADBCB8D18A72661C16314%26state%3D__redir_auth__%26nonce%3Ddf9d665a25782fd0f1f1542574e5f268321fdc42bc5fac92b4d823040f3f48fc%26redirect_uri%3Dhttps://entreprise.francetravail.fr/vos-recrutements/auth/connect/#login/",
+        url : urls.france_travail_employeur,
         category: "applicationMetier"
       },
       france_travail_convention :{
         id: "france_travail_convention",
         title: "Convention",
         icon: "",
-        url: "https://immersion-facile.beta.gouv.fr/demande-immersion?email=&firstName=&lastName=&phone=&financiaryHelp=&led=&schoolName=&schoolPostcode=&emergencyContact=&emergencyContactPhone=&emergencyContactEmail=&isRqth=false&birthdate=&agencyDepartment=&agencyKind=&siret=&businessName=&businessAdvantages=&etFirstName=&etLastName=&etJob=&etPhone=&etEmail=&erFirstName=&erLastName=&erPhone=&erEmail=&immersionAddress=&agencyId=&agencyReferentFirstName=&agencyReferentLastName=&immersionActivities=&immersionSkills=&sanitaryPreventionDescription=&workConditions=&individualProtectionDescription=&dateStart=2026-05-01&dateEnd=2026-05-02&schedule=%7B%22totalHours%22%3A0%2C%22workedDays%22%3A0%2C%22isSimple%22%3Atrue%2C%22complexSchedule%22%3A%5B%7B%22date%22%3A%222026-05-01T00%3A00%3A00.000Z%22%2C%22timePeriods%22%3A%5B%5D%7D%2C%7B%22date%22%3A%222026-05-02T00%3A00%3A00.000Z%22%2C%22timePeriods%22%3A%5B%5D%7D%5D%7D",
+        url : urls.france_travail_convention,
+        category: "applicationMetier"
+      },
+      dude :{
+        id: "dude",
+        title: "Dude",
+        icon: "",
+        url: urls.dude,
         category: "applicationMetier"
       },
       URSSAF :{
         id: "URSSAF",
         title: "URSSAF",
         icon: "",
-        url: "https://www.due.urssaf.fr/declarant/index.jsf",
+        url: urls.urssaf,
         category: "applicationMetier"
       },
       URSSAF_mandataire :{
         id: "URSSAF_mandataire",
         title: "URSSAF Mandataire",
         icon: "",
-        url: "https://calcul.urssaf.fr/asap/lstcompte?ShowCfEmail=0",
+        url: urls.urssaf_mandataire,
         category: "applicationMetier"
       },
       CIGAC :{
         id: "CIGAC",
         title: "CIGAC",
         icon: "",
-        url: "https://secure.cigac.fr/",
+        url: urls.cigac,
         category: "applicationMetier"
       },
       IRCEM :{
         id: "IRCEM",
         title: "IRCEM",
         icon: "",
-        url: "https://espacestructure.ircem.com/",
+        url: urls.ircem,
         category: "applicationMetier"
       },
       edenred :{
         id: "edenred",
         title: "Edenred",
         icon: "",
-        url: "https://client.edenred.fr/login",
+        url: urls.edenred,
         category: "applicationMetier"
       },
       fabregue :{
         id: "fabregue",
         title: "Fabrègue",
         icon: "",
-        url: "https://fabregueweb.fr/default/",
+        url: urls.fabregue,
         category: "applicationMetier"
       },
       collecteam_prevoyance :{
         id: "collecteam_prevoyance",
         title: "Collecteam Prévoyance",
         icon: "",
-        url: "https://prevoyance-assures.collecteam.fr/",
+        url: urls.collecteam_prevoyance,
         category: "applicationMetier"
       },
       collecteam_espacerh :{
         id: "collecteam_espacerh",
         title: "Collecteam Espace RH",
         icon: "",
-        url: "https://espacerh.collecteam.fr/login",
+        url: urls.collecteam_espacerh,
         category: "applicationMetier"
       },
       CNP_assurance :{
         id: "CNP_assurance",
         title: "CNP Assurance",
         icon: "",
-        url: "https://www.cnp.fr/partenaires/associations-et-collectivites-locales/collectivite-locale",
+        url: urls.cnp_assurance,
         category: "applicationMetier"
       },
       PEPS :{
         id: "PEPS",
         title: "PEP'S",
         icon: "",
-        url: "https://plateforme-employeurs.caissedesdepots.fr/espace-prive/plateforme/#/public/accueil",
+        url: urls.peps,
         category: "applicationMetier"
       },
       CPAM :{
         id: "CPAM",
         title: "CPAM",
         icon: "",
-        url: "https://user.clicrdv.com/cpam-de-charente",
+        url: urls.cpam,
         category: "applicationMetier"
       },
       CNFPT :{
         id: "CNFPT",
         title: "CNFPT",
         icon: "",
-        url: "https://inscription.cnfpt.fr/?gl=NjliOGJkMzI",
+        url: urls.cnfpt,
         category: "applicationMetier"
       },
       indeed :{
         id: "indeed",
         title: "Indeed",
         icon: "",
-        url: "https://secure.indeed.com/auth?continue=https%3A%2F%2Femployers.indeed.com%2Fo%2Fjobs&hl=fr&userType=employer",
+        url: urls.indeed,
         category: "applicationMetier"
       },
       autorite_sante :{
         id: "autorite_sante",
         title: "Haute Autorité de Santé",
         icon: "",
-        url: "https://has-cespi-prod1.pegacloud.net/prweb/PRWebLDAP1/app/bce/-sPDjli2JlECD84cvMNZ8wxIe7urqtp8*/!STANDARD",
+        url: urls.autorite_sante,
         category: "applicationMetier"
       },
       assurance_maladie :{
         id: "assurance_maladie",
         title: "Assurance Maladie",
         icon: "",
-        url: "https://questionnaires-risquepro.ameli.fr/",
+        url: urls.assurance_maladie,
         category: "applicationMetier"
       },
       ministere_justice :{
         id: "ministere_justice",
         title: "Ministère de la Justice",
         icon: "",
-        url: "https://www.public.cjnb2plus.justice.gouv.fr/?target_link_uri=http%3A%2F%2Fwww.cjnb2plus.justice.gouv.fr%3A80%2Fpersonne-physique%2Fdemandes%2F&method=get&oidc_callback=https%3A%2F%2Fwww.cjnb2plus.justice.gouv.fr%2Fredirect_uri&x_csrf=M5KiPi3Ipww",
+        url: urls.ministere_justice,
         category: "applicationMetier"
       },
       CARSAT :{
         id: "CARSAT",
         title: "CARSAT",
         icon: "",
-        url: "https://www.partenairesactionsociale.fr/sites/ppas/home.html",
+        url: urls.carsat,
         category: "applicationMetier"
       },
       CNRACL :{
         id: "CNRACL",
         title: "CNRACL",
         icon: "",
-        url: "https://www.cnracl.retraites.fr/employeur/ma-plateforme-peps",
+        url: urls.cnracl,
         category: "applicationMetier"
       },
-
-
-
-
-      
-
-
-
-
-      
+      veloce :{
+        id: "veloce",
+        title: "Veloce",
+        icon: "",
+        url: urls.veloce,
+        category: "applicationMetier"
+      },
+      manatime :{
+        id: "manatime",
+        title: "Manatime",
+        icon: "",
+        url: urls.manatime,
+        category: "applicationMetier"
+      },
+      nouvelle_aquitaine :{
+        id: "nouvelle_aquitaine",
+        title: "Région Nouvelle-Aquitaine",
+        icon: "",
+        url: urls.nouvelle_aquitaine,
+        category: "applicationMetier"
+      },
+      france_travail_accueil : {
+        id: "france_travail_accueil",
+        title: "Accueil",
+        icon: "",
+        url: urls.france_travail_accueil,
+        category: "applicationMetier"
+      },
+      CAF : {
+        id: "CAF",
+        title: "CAF",
+        icon: "",
+        url: urls.caf,
+        category: "applicationMetier"
+      },
+      impot : {
+        id: "impot",
+        title: "Impot",
+        icon: "",
+        url: urls.impot,
+        category: "applicationMetier"
+      },
+      canva : {
+        id: "canva",
+        title: "Canva",
+        icon: "",
+        url: urls.canva,
+        category: "applicationMetier"
+      },
+      ANTS : {
+        id: "ANTS",
+        title: "ANTS",
+        icon: "",
+        url: urls.ANTS,
+        category: "applicationMetier"
+      },
+      ameli : {
+        id: "ameli",
+        title: "Ameli",
+        icon: "",
+        url: urls.ameli,
+        category: "applicationMetier"
+      },
+      service_civique : {
+        id: "service_civique",
+        title: "Service Civique",
+        icon: "",
+        url: urls.service_civique,
+        category: "applicationMetier"
+      },
+      AGEFIPH : {
+        id: "AGEFIPH",
+        title: "AGEFIPH",
+        icon: "",
+        url: urls.agefiph,
+        category: "applicationMetier"
+      },
+      CAP_metier : {
+        id: "CAP_metier",
+        title: "CAP Metier",
+        icon: "",
+        url: urls.cap_metier,
+        category: "applicationMetier"
+      },
+      logement_sociale : {
+        id: "logement_sociale",
+        title: "Mon Logement Sociale",
+        icon: "",
+        url: urls.logement_sociale,
+        category: "applicationMetier"
+      },
+      emploi_inclusion : {
+        id: "emploi_inclusion",
+        title: "Emploi Inclusion",
+        icon: "",
+        url: urls.emploi_inclusion,
+        category: "applicationMetier"
+      },
+      copilot : {
+        id: "copilot",
+        title: "Microsoft 365 | Copilot",
+        icon: "",
+        url: urls.copilot,
+        category: "applicationMetier"
+      },
+      milona : {
+        id: "milona",
+        title: "Milona",
+        icon: "",
+        url: urls.milona,
+        category: "applicationMetier"
+      },
+      evennements_emploi : {
+        id: "evennements_emploi",
+        title: "Mes évennements Emploi",
+        icon: "",
+        url: urls.evennements_emploi,
+        category: "applicationMetier"
+      },
+      immersion_facilite : {
+        id: "immersion_facilite",
+        title: "Immersion Facilitée",
+        icon: "",
+        url: urls.immersion_facilite,
+        category: "applicationMetier"
+      },
     };
   } catch (error) {
     console.error("Impossible de charger les métadonnées des applications:", error);
