@@ -24,56 +24,56 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
         id: "duckduckgo",
         title: "DuckDuckGo",
         icon: "icons/duckduckgo.ico",
-        url: "https://start.duckduckgo.com",
+        url: urls.duckduckgo,
         category: "applicationCommunes"
       },
       qwant: {
         id: "qwant",
         title: "Qwant",
         icon: "icons/qwant.ico",
-        url: "https://www.qwant.com/?l=fr",
+        url: urls.qwant,
         category: "applicationCommunes"
       },
       google: {
         id: "google",
         title: "Google",
         icon: "icons/google.png",
-        url: "https://www.google.com/",
+        url: urls.google,
         category: "applicationCommunes"
       },
       teams: {
         id: "teams",
         title: "Teams",
         icon: "icons/teams.png",
-        url: "https://teams.cloud.microsoft/",
+        url: urls.teams,
         category: "applicationCommunes"
       },
       forms: {
         id: "forms",
         title: "Forms",
         icon: "icons/forms.png",
-        url: "https://forms.cloud.microsoft",
+        url: urls.forms,
         category: "applicationCommunes"
       },
       booking: {
         id: "booking",
         title: "Booking",
         icon: "icons/booking.ico",
-        url: "https://bookings.cloud.microsoft/",
+        url: urls.booking,
         category: "applicationCommunes"
       },
       onenote: {
         id: "onenote",
         title: "Onenote",
         icon: "icons/onenote.png",
-        url: "https://onenote.cloud.microsoft/",
+        url: urls.onenote,
         category: "applicationCommunes"
       },
       planner: {
         id: "planner",
         title: "Planner",
         icon: "icons/planner.ico",
-        url: "https://planner.cloud.microsoft/",
+        url: urls.planner,
         category: "applicationCommunes"
       },
       assistance_informatique: {
@@ -214,357 +214,357 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
       domatel:{
         id: "domatel",
         title: "Domatel",
-        icon: "",
+        icon: "icons/domatel.ico",
         url: urls.domatel,
         category: "applicationMetier"
       },
       NFC_tag_and_play:{
         id: "nfcTagAndPlay",
         title: "NFC Tag And Play",
-        icon: "",
+        icon: "icons/nfcTagAndPlay.jpg",
         url: "",
         category: "applicationMetier"
       },
       free2Move:{
         id: "free2Move",
         title: "Free2Move",
-        icon: "",
+        icon: "icons/mobilisight.png",
         url: urls.free2Move,
         category: "applicationMetier"
       },
       medecineCDG24:{
         id: "medecineCDG24",
         title: "Médecine CDG 24",
-        icon: "",
+        icon: "icons/cdg24.ico",
         url: urls.medecineCDG24,
         category: "applicationMetier"
       },
       CNAS:{
         id: "CNAS",
         title: "CNAS",
-        icon: "",
+        icon: "icons/cnas.png",
         url: urls.cnas,
         category: "applicationMetier"
       },
       portail_ressources:{
         id: "portail_ressources",
         title: "Portail des ressources",
-        icon: "",
+        icon: "icons/portail_ressource.jpg",
         url: urls.portail_ressources,
         category: "applicationMetier"
       },
       arche_MC2_assistance :{
         id: "arche_MC2_assistance",
         title: "Arche-MC2 Assistance",
-        icon: "",
+        icon: "icons/domatel.ico",
         url: urls.arche_MC2_assistance,
         category: "applicationMetier"
       },
       my_ayvens_manager :{
         id: "my_ayvens_manager",
         title: "My Ayvens Manager",
-        icon: "",
+        icon: "icons/my_ayvens_manager.ico",
         url : urls.my_ayvens_manager,
         category: "applicationMetier"
       },
       visualAA :{
         id: "visualAA",
         title: "VisualAA",
-        icon: "",
+        icon: "icons/visualAA.png",
         url: urls.visualAA,
         category: "applicationMetier"
       },
       total_energie :{
         id: "total_energie",
         title: "Total Energie",
-        icon: "",
+        icon: "icons/totalenergie.ico",
         url: urls.total_energie,
         category: "applicationMetier"
       },
       carte_carburant :{
         id: "carte_carburant",
         title: "Carte Carburant",
-        icon: "",
+        icon: "icons/carte_carburant.png",
         url: urls.carte_carburant,
         category: "applicationMetier"
       },
       net_entreprise :{
         id: "net_entreprise",
         title: "Net-entreprises",
-        icon: "",
+        icon: "icons/net-entreprise.jpg",
         url: urls.net_entreprise,
         category: "applicationMetier"
       },
       cdg24 :{
         id: "cdg24",
         title: "CDG 24",
-        icon: "",
+        icon: "icons/cdg24.ico",
         url: urls.cdg24 ,
         category: "applicationMetier"
       },
       MNT :{
         id: "MNT",
         title: "MNT",
-        icon: "",
+        icon: "icons/mnt.ico",
         url: urls.mnt,
         category: "applicationMetier"
       },
       france_travail_accueil_pro :{
         id: "france_travail_accueil_pro",
         title: "Accueil",
-        icon: "",
+        icon: "icons/france_travail.png",
         url: urls.france_travail_accueil_pro,
         category: "applicationMetier"
       },
       france_travail_employeur :{
         id: "france_travail_employeur",
         title: "Employeur",
-        icon: "",
+        icon: "icons/france_travail.png",
         url : urls.france_travail_employeur,
         category: "applicationMetier"
       },
       france_travail_convention :{
         id: "france_travail_convention",
         title: "Convention",
-        icon: "",
+        icon: "icons/france_travail.png",
         url : urls.france_travail_convention,
         category: "applicationMetier"
       },
       dude :{
         id: "dude",
         title: "Dude",
-        icon: "",
+        icon: "icons/france_travail.png",
         url: urls.dude,
         category: "applicationMetier"
       },
       URSSAF :{
         id: "URSSAF",
         title: "URSSAF",
-        icon: "",
+        icon: "icons/urssaf.ico",
         url: urls.urssaf,
         category: "applicationMetier"
       },
       URSSAF_mandataire :{
         id: "URSSAF_mandataire",
         title: "URSSAF Mandataire",
-        icon: "",
+        icon: "icons/urssaf.ico",
         url: urls.urssaf_mandataire,
         category: "applicationMetier"
       },
       CIGAC :{
         id: "CIGAC",
         title: "CIGAC",
-        icon: "",
+        icon: "icons/cigac.jpg",
         url: urls.cigac,
         category: "applicationMetier"
       },
       IRCEM :{
         id: "IRCEM",
         title: "IRCEM",
-        icon: "",
+        icon: "icons/ircem.png",
         url: urls.ircem,
         category: "applicationMetier"
       },
       edenred :{
         id: "edenred",
         title: "Edenred",
-        icon: "",
+        icon: "icons/edenred.ico",
         url: urls.edenred,
         category: "applicationMetier"
       },
       fabregue :{
         id: "fabregue",
         title: "Fabrègue",
-        icon: "",
+        icon: "icons/fabregue.png",
         url: urls.fabregue,
         category: "applicationMetier"
       },
       collecteam_prevoyance :{
         id: "collecteam_prevoyance",
         title: "Collecteam Prévoyance",
-        icon: "",
+        icon: "icons/collecteam.jpg",
         url: urls.collecteam_prevoyance,
         category: "applicationMetier"
       },
       collecteam_espacerh :{
         id: "collecteam_espacerh",
         title: "Collecteam Espace RH",
-        icon: "",
+        icon: "icons/collecteam.jpg",
         url: urls.collecteam_espacerh,
         category: "applicationMetier"
       },
       CNP_assurance :{
         id: "CNP_assurance",
         title: "CNP Assurance",
-        icon: "",
+        icon: "icons/cnp_assurance.jpg",
         url: urls.cnp_assurance,
         category: "applicationMetier"
       },
       PEPS :{
         id: "PEPS",
         title: "PEP'S",
-        icon: "",
+        icon: "icons/peps.jpg",
         url: urls.peps,
         category: "applicationMetier"
       },
       CPAM :{
         id: "CPAM",
         title: "CPAM",
-        icon: "",
+        icon: "icons/ameli.ico",
         url: urls.cpam,
         category: "applicationMetier"
       },
       CNFPT :{
         id: "CNFPT",
         title: "CNFPT",
-        icon: "",
+        icon: "icons/cnfpt.jpg",
         url: urls.cnfpt,
         category: "applicationMetier"
       },
       indeed :{
         id: "indeed",
         title: "Indeed",
-        icon: "",
+        icon: "icons/indeed.ico",
         url: urls.indeed,
         category: "applicationMetier"
       },
       autorite_sante :{
         id: "autorite_sante",
         title: "Haute Autorité de Santé",
-        icon: "",
+        icon: "icons/autorite_sante.jpg",
         url: urls.autorite_sante,
         category: "applicationMetier"
       },
       assurance_maladie :{
         id: "assurance_maladie",
         title: "Assurance Maladie",
-        icon: "",
+        icon: "icons/ameli.ico",
         url: urls.assurance_maladie,
         category: "applicationMetier"
       },
       ministere_justice :{
         id: "ministere_justice",
         title: "Ministère de la Justice",
-        icon: "",
+        icon: "icons/ministere_justice.ico",
         url: urls.ministere_justice,
         category: "applicationMetier"
       },
       CARSAT :{
         id: "CARSAT",
         title: "CARSAT",
-        icon: "",
+        icon: "icons/carsat.jpg",
         url: urls.carsat,
         category: "applicationMetier"
       },
       CNRACL :{
         id: "CNRACL",
         title: "CNRACL",
-        icon: "",
+        icon: "icons/cnracl.png",
         url: urls.cnracl,
         category: "applicationMetier"
       },
       veloce :{
         id: "veloce",
         title: "Veloce",
-        icon: "",
+        icon: "icons/portail_ressource.jpg",
         url: urls.veloce,
         category: "applicationMetier"
       },
       manatime :{
         id: "manatime",
         title: "Manatime",
-        icon: "",
+        icon: "icons/manatime.ico",
         url: urls.manatime,
         category: "applicationMetier"
       },
       nouvelle_aquitaine :{
         id: "nouvelle_aquitaine",
         title: "Région Nouvelle-Aquitaine",
-        icon: "",
+        icon: "icons/nouvelle_aquitaine.svg",
         url: urls.nouvelle_aquitaine,
         category: "applicationMetier"
       },
       france_travail_accueil : {
         id: "france_travail_accueil",
         title: "Accueil",
-        icon: "",
+        icon: "icons/france_travail.png",
         url: urls.france_travail_accueil,
         category: "applicationMetier"
       },
       CAF : {
         id: "CAF",
         title: "CAF",
-        icon: "",
+        icon: "icons/caf.png",
         url: urls.caf,
         category: "applicationMetier"
       },
       impot : {
         id: "impot",
         title: "Impot",
-        icon: "",
+        icon: "icons/ministere_justice.ico",
         url: urls.impot,
         category: "applicationMetier"
       },
       canva : {
         id: "canva",
         title: "Canva",
-        icon: "",
+        icon: "icons/canva.ico",
         url: urls.canva,
         category: "applicationMetier"
       },
       ANTS : {
         id: "ANTS",
         title: "ANTS",
-        icon: "",
+        icon: "icons/ministere_justice.ico",
         url: urls.ANTS,
         category: "applicationMetier"
       },
       ameli : {
         id: "ameli",
         title: "Ameli",
-        icon: "",
+        icon: "icons/ameli.ico",
         url: urls.ameli,
         category: "applicationMetier"
       },
       service_civique : {
         id: "service_civique",
         title: "Service Civique",
-        icon: "",
+        icon: "icons/ministere_justice.ico",
         url: urls.service_civique,
         category: "applicationMetier"
       },
       AGEFIPH : {
         id: "AGEFIPH",
         title: "AGEFIPH",
-        icon: "",
+        icon: "icons/agefiph.jpg",
         url: urls.agefiph,
         category: "applicationMetier"
       },
       CAP_metier : {
         id: "CAP_metier",
         title: "CAP Metier",
-        icon: "",
+        icon: "icons/cap_metier.png",
         url: urls.cap_metier,
         category: "applicationMetier"
       },
       logement_sociale : {
         id: "logement_sociale",
         title: "Mon Logement Sociale",
-        icon: "",
+        icon: "icons/ministere_justice.ico",
         url: urls.logement_sociale,
         category: "applicationMetier"
       },
       emploi_inclusion : {
         id: "emploi_inclusion",
         title: "Emploi Inclusion",
-        icon: "",
+        icon: "icons/ministere_justice.ico",
         url: urls.emploi_inclusion,
         category: "applicationMetier"
       },
       copilot : {
         id: "copilot",
         title: "Microsoft 365 | Copilot",
-        icon: "",
+        icon: "icons/copilot.jpg",
         url: urls.copilot,
         category: "applicationMetier"
       },
@@ -578,14 +578,14 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
       evennements_emploi : {
         id: "evennements_emploi",
         title: "Mes évennements Emploi",
-        icon: "",
+        icon: "icons/ministere_justice.ico",
         url: urls.evennements_emploi,
         category: "applicationMetier"
       },
       immersion_facilite : {
         id: "immersion_facilite",
         title: "Immersion Facilitée",
-        icon: "",
+        icon: "icons/ministere_justice.ico",
         url: urls.immersion_facilite,
         category: "applicationMetier"
       },

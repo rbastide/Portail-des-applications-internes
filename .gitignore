@@ -1,1 +1,5 @@
 Scripts/data/urls.json
+images/icons/*.png
+images/icons/*.jpg
+images/icons/*.ico
+images/icons/*.svg
