@@ -57,7 +57,7 @@ header > div:last-child {
 /* Images du header */
 header img {
     height: 100px;
-    margin-right: 100px;
+    margin-right: 200px;
     object-fit: contain;
     object-position: center;
 }
@@ -415,6 +415,7 @@ header img.logo-sombre {
 
 .app-group:hover {
     z-index: 100; 
+    cursor: pointer;
 }
 
 .sub-menu-container {
