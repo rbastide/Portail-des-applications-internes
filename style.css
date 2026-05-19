@@ -330,7 +330,7 @@ header img.logo-sombre {
     gap: 20px;
     justify-content: flex-start;
     max-height: 1000px;
-    overflow: hidden;
+    overflow: visible; /* Important pour que les sous-menus ne soient pas coupés */
     transition: max-height 0.3s ease, opacity 0.3s ease;
     opacity: 1;
     padding: 20px 30px;
@@ -339,6 +339,7 @@ header img.logo-sombre {
 .apps-container.closed {
     max-height: 0;
     opacity: 0;
+    overflow: hidden; /* Cache le contenu qui dépasse pour l'animation */
 }
 
 /* Style de chaque application */
@@ -406,6 +407,81 @@ header img.logo-sombre {
 .container .app:nth-child(16) { animation-delay: 1.6s; }
 .container .app:nth-child(17) { animation-delay: 1.7s; }
 .container .app:nth-child(18) { animation-delay: 1.8s; }
+
+/* --- GROUPES D'APPLICATIONS ET SOUS-MENUS --- */
+.app-group {
+    cursor: default;
+}
+
+.app-group:hover {
+    z-index: 100; 
+}
+
+.sub-menu-container {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 180px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0.3s ease, top 0.3s ease;
+}
+
+.app-group:hover .sub-menu-container {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    top: 100%;
+}
+
+.sub-app {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background 0.2s;
+    text-decoration: none;
+    color: var(--dark-gray);
+    position: relative;
+}
+
+.sub-app:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.sub-app img {
+    width: 32px;
+    height: 32px;
+}
+
+.sub-app span {
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-right: 25px; /* Espace pour l'étoile */
+}
+
+.sub-star-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--gray);
+    cursor: pointer;
+}
+
+.sub-star-btn:hover {
+    color: var(--gold);
+}
 
 /* --- 8. FOOTER & CHARTE --- */
 footer {
@@ -617,6 +693,18 @@ body.dark-mode footer {
     background: var(--primary-color);
     border-color: var(--white);
     color: var(--black);
+}
+
+/* Sous-menus en mode sombre */
+body.dark-mode .sub-menu-container {
+    background: var(--dark-gray);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.9);
+}
+body.dark-mode .sub-app {
+    color: var(--white);
+}
+body.dark-mode .sub-app:hover {
+    background: rgba(255, 255, 255, 0.1);
 }
 
 /* --- 10. ANIMATIONS --- */

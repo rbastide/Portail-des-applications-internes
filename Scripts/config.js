@@ -4,30 +4,30 @@
 // applications : ["Tableau","Comportant","Les applications"],
 // },
 
-const commonTools = ["duckduckgo","qwant","google","annuaire","listmonk","assistance_informatique","intervention_technique","editeur_pdf","gestionnaire_totp","outlook","teams","forms","onenote","booking","planner"];
+const commonTools = ["navigateurs","annuaire","listmonk","assistance_info","editeur_pdf","gestionnaire_totp","microsoft_suite"];
 
-const allTools = ["glpi","perigeo","hawk_manager","hawk_rt","ciril_net","i_parapheur","webdelib","slow","i_milo","mad","sirtaqui","i_parapheur","webdelib","slow","i_delibre"] + commonTools;
+const allTools = ["glpi","perigeo","hawk_manager","hawk_rt","ciril_net","i_parapheur","webdelib","slow","i_milo","mad","sirtaqui","i_parapheur","webdelib","slow","i_delibre"].concat(commonTools);
 
 const structures = {
     "perimouv": {
         name: "Périmouv",
-        applications: ["hawk_manager","hawk_rt","ciril_net","i_parapheur","webdelib","slow"] + commonTools
+        applications: ["hawk_manager","hawk_rt","ciril_net","i_parapheur","webdelib","slow"].concat(commonTools)
     },
     "cias": {
         name: "CIAS",
-        applications: ["mad","domatel","nfcTagAndPlay","free2Move","medecineCDG24","CNAS","portail_ressources","arche_MC2_assistance","my_ayvens_manager","visualAA","total_energie","carte_carburant","net_entreprise","cdg24","MNT","france_travail_accueil_pro","france_travail_employeur","france_travail_convention","URSSAF","URSSAF_mandataire","CIGAC","IRCEM","edenred","fabregue","collecteam_prevoyance","collecteam_espacerh","CNP_assurance","PEPS","CPAM","CNFPT","indeed","autorite_sante","assurance_maladie","ministere_justice","CARSAT","CNRACL"] + commonTools
+        applications: ["mad","domatel","nfcTagAndPlay","free2Move","sante","portail_ressources","arche_MC2_assistance","my_ayvens_manager","visualAA","total_energie","carte_carburant","net_entreprise","MNT","france_travail","urssaf_groupe","assurance","IRCEM","edenred","fabregue","collecteam","PEPS","CNFPT","indeed","ministere_justice","CNRACL"].concat(commonTools)
     },
     "ml/mde": {
         name: "ML / MDE",
-        applications: ["i_milo","veloce","dude","manatime","nouvelle_aquitaine","france_travail_accueil","CAF","impot","canva","ANTS","ameli","service_civique","AGEFIPH","CAP_metier","logement_sociale","emploi_inclusion","copilot","milona","evennements_emploi","immersion_facilite"] + commonTools
+        applications: ["gouvernements","i_milo","veloce","dude","manatime","nouvelle_aquitaine","france_travail_accueil","CAF","canva","ameli","AGEFIPH","CAP_metier","copilot","milona"].concat(commonTools)
     },
     "silot": {
         name: "Silot",
-        applications: ["ciril_net","i_parapheur","webdelib","slow"] + commonTools
+        applications: ["ciril_net","i_parapheur","webdelib","slow"].concat(commonTools)
     },
     "oti":{
         name: "Oti",
-        applications : ["sirtaqui","ciril_net","i_parapheur","webdelib","slow"] + commonTools
+        applications : ["sirtaqui","ciril_net","i_parapheur","webdelib","slow"].concat(commonTools)
     },
     "common":{
         name:"Communs",

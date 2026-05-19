@@ -43,9 +43,9 @@ function renderFavorites() {
 
     // Parcours toutes les icônes d'étoiles et si l'application correspondante est dans la liste
     // Il l'affiche en doré
-    const allStars = document.querySelectorAll('.app .star-btn');
+    const allStars = document.querySelectorAll('.star-btn');
     allStars.forEach(star => {
-        const appLink = star.closest('.app');
+        const appLink = star.closest('.app, .sub-app');
         if (appLink) {
             const appId = appLink.getAttribute('data-id');
             if (favorites.includes(appId)) {
@@ -56,23 +56,18 @@ function renderFavorites() {
         }
     });
 
-    // Balaye chaque applications enregistré dans les favoris et va :
-    // - Chercher l'éléments html correspondant à cette applications
-    // - Créer un clône
-    // - Assigne l'événement de click sur l'étoile du clône
-    // - Ajout le clône dans la section des favoris
+    // Génère les favoris à l'aide des métadonnées
     favorites.forEach(appId => {
-        const originalApp = document.querySelector(`.container > div:not(.favoris) .app[data-id="${appId}"]`);
-        
-        if (originalApp) {
-            const clone = originalApp.cloneNode(true);
+        const appData = getAllApplications().find(a => a.id === appId);
+        if (appData) {
+            // Utilise la fonction de création existante, ce qui permet à une "sous-application" 
+            // d'apparaître comme une application normale dans la grille des favoris
+            const appElement = createApplicationElement(appData);
             
-            const cloneStar = clone.querySelector('.star-btn');
-            if (cloneStar) {
-                cloneStar.onclick = (e) => toggleFavorite(e, appId);
-            }
-            
-            favoritesContainer.appendChild(clone);
+            const star = appElement.querySelector('.star-btn');
+            if (star) star.style.color = 'gold';
+
+            favoritesContainer.appendChild(appElement);
         }
     });
 }

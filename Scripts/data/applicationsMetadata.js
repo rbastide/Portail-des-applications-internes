@@ -19,6 +19,92 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
 
     applicationsMetadata = {
 
+      // Gouvernements
+      gouvernements:{
+        id: "gouvernements",
+        title: "Gouvernements",
+        icon: "icons/ministere_justice.ico",
+        url:"#",
+        category: "applicationMetier",
+        isGroup: true,
+        subApps: ["impot","logement_sociale","emploi_inclusion","ants","serice_civique","evennements_emploi","immersion_facilite"]
+      },
+
+      assistance_info:{
+        id: "assistance_info",
+        title : "Assistance Informatique",
+        icon : "icons/customer-support.png",
+        url: "#",
+        category: "applicationCommunes",
+        isGroup: true,
+        subApps: ["assistance_informatique","intervention_technique","glpi"]
+      },
+      microsoft_suite:{
+        id: "microsoft_suite",
+        title : "Suite Microsoft",
+        icon : "icons/microsoft.ico",
+        url: "#",
+        category: "applicationCommunes",
+        isGroup: true,
+        subApps: ["teams","forms","onenote","planner","booking","outlook"]
+      },
+      navigateurs:{
+        id: "navigateurs",
+        title : "Navigateurs",
+        icon : "icons/navigateurs.png",
+        url: "#",
+        category: "applicationCommunes",
+        isGroup: true,
+        subApps: ["duckduckgo","qwant","google"]
+      },
+      collecteam:{
+        id: "collecteam",
+        title : "Collecteam",
+        icon : "icons/collecteam.jpg",
+        url: "#",
+        category: "applicationMetier",
+        isGroup: true,
+        subApps: ["collecteam_prevoyance","collecteam_espacerh"]
+      },
+      urssaf_groupe:{
+        id: "urssaf_groupe",
+        title : "Urssaf",
+        icon : "icons/urssaf.ico",
+        url: "#",
+        category: "applicationMetier",
+        isGroup: true,
+        subApps: ["URSSAF","URSSAF_mandataire"]
+      },
+      france_travail:{
+        id : "france_travail",
+        title : "France Travail",
+        icon : "icons/france_travail.png",
+        url: "#",
+        category: "applicationMetier",
+        isGroup: true,
+        subApps: ["france_travail_accueil_pro","france_travail_employeur","france_travail_convention"]
+      },
+
+      assurance:{
+        id : "assurance",
+        title : "Assurance",
+        icon : "icons/assurance.jpg",
+        url: "#",
+        category: "applicationMetier",
+        isGroup: true,
+        subApps : ["CNP_assurance","carsat","CPAM","assurance_maladie","CIGAC"]
+      },
+      sante:{
+        id : "sante",
+        title : "Santé",
+        icon : "icons/sante.png",
+        url: "#",
+        category: "applicationMetier",
+        isGroup: true,
+        subApps : ["autorite_sante","medecineCDG24","cdg24","cnas"]
+      },
+
+
       // Applications communes
       duckduckgo: {
         id: "duckduckgo",

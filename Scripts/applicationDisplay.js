@@ -22,6 +22,56 @@ function displayApplications(category) {
 
 // Génère l'élément HTML d'une application
 function createApplicationElement(app) {
+  if (app.isGroup) {
+    const groupDiv = document.createElement('div');
+    groupDiv.className = 'app app-group';
+    groupDiv.setAttribute('data-id', app.id);
+
+    const img = document.createElement('img');
+    img.src = `images/${app.icon}`;
+    img.alt = app.title;
+
+    const title = document.createElement('div');
+    title.className = 'app-title';
+    title.textContent = app.title;
+
+    const subMenu = document.createElement('div');
+    subMenu.className = 'sub-menu-container';
+
+    app.subApps.forEach(subAppId => {
+      const subAppData = getAllApplications().find(a => a.id === subAppId);
+      if (subAppData) {
+        const subLink = document.createElement('a');
+        subLink.href = subAppData.url;
+        subLink.target = '_blank';
+        subLink.className = 'sub-app';
+        subLink.setAttribute('data-id', subAppData.id);
+
+        const subImg = document.createElement('img');
+        subImg.src = `images/${subAppData.icon}`;
+        subImg.alt = subAppData.title;
+
+        const subTitle = document.createElement('span');
+        subTitle.textContent = subAppData.title;
+
+        const subStar = document.createElement('i');
+        subStar.className = 'fa fa-star star-btn sub-star-btn';
+        subStar.setAttribute('onclick', `toggleFavorite(event,'${subAppData.id}')`);
+
+        subLink.appendChild(subImg);
+        subLink.appendChild(subTitle);
+        subLink.appendChild(subStar);
+        subMenu.appendChild(subLink);
+      }
+    });
+
+    groupDiv.appendChild(img);
+    groupDiv.appendChild(title);
+    groupDiv.appendChild(subMenu);
+
+    return groupDiv;
+  }
+
   const link = document.createElement('a');
   link.href = app.url;
   link.target = '_blank';
