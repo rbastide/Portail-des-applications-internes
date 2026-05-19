@@ -1,7 +1,20 @@
 // Données importantes aux applications
+// Les groupes d'applications se construisent 
+// sous la forme : 
+// nom du groupe -> {
+// id : "nom de l'id du groupe",
+// title : "Nom du groupe qui sera afficher",
+// icon : "Image correspondante au groupe",
+// url : "#",
+// category : "La catégorie a laquelle il appartient",
+// isGroupe : true,
+// subApps : ["Applications","Choisis"]
+//},
+
+// Les applications se construisent
 // Sous la forme : 
 // nom de l'application -> {
-// id : "nom de l'id",
+// id : "nom de l'id de l'application",
 // title : "Nom de l'application qui sera afficher",
 // icon : "Image de l'application",
 // url : "Url qui redirige vers la page concerné",
