@@ -209,3 +209,22 @@ Si vous souhaitez modifier la structure par défaut : modifier le contenu de la 
 ```js
 const defaultStructure = "Nom de la structure à modifier";
 ``` 
+
+
+### Ajouter les icons
+
+Dans le dossier images, ajoutez un dossier "icons" qui contiendra vos icons
+
+
+### Ajouter les liens
+
+Dans le dossier Scripts/data, copiez-collez le fichiers urls-example.json et renommez le urls.json.
+
+Pour ajouter les liens, ca se passe sous le format : 
+
+```json
+{
+    "id_de_l'application" : "lien de l'appli",
+    "id_de_l'application2" : "lien de l'appli2"
+}
+
