@@ -4,7 +4,7 @@
 // applications : ["Tableau","Comportant","Les applications"],
 // },
 
-const commonTools = ["navigateurs","annuaire","listmonk","assistance_info","editeur_pdf","gestionnaire_totp","microsoft_suite"];
+const commonTools = ["slow","annuaire","navigateurs",,"listmonk","assistance_info","editeur_pdf","gestionnaire_totp","microsoft_suite"];
 
 const allTools = ["glpi","perigeo","hawk_manager","hawk_rt","ciril_net","i_parapheur","webdelib","slow","i_milo","mad","sirtaqui","i_parapheur","webdelib","slow","i_delibre"].concat(commonTools);
 
@@ -15,7 +15,7 @@ const structures = {
     },
     "cias": {
         name: "CIAS",
-        applications: ["mad","domatel","nfcTagAndPlay","free2Move","sante","portail_ressources","arche_MC2_assistance","my_ayvens_manager","visualAA","total_energie","carte_carburant","net_entreprise","MNT","france_travail","urssaf_groupe","assurance","IRCEM","edenred","fabregue","collecteam","PEPS","CNFPT","indeed","ministere_justice","CNRACL"].concat(commonTools)
+        applications: ["mad","domatel","free2Move","sante","portail_ressources","arche_MC2_assistance","my_ayvens_manager","visualAA","carburant","net_entreprise","MNT","france_travail","urssaf_groupe","assurance","IRCEM","edenred","fabregue","collecteam","PEPS","CNFPT","indeed","gouvernement_cias","CNRACL","ppas","geoclip","pdf24","cnsa"].concat(commonTools)
     },
     "ml/mde": {
         name: "ML / MDE",

@@ -114,7 +114,27 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
         url: "#",
         category: "applicationMetier",
         isGroup: true,
-        subApps : ["autorite_sante","medecineCDG24","cdg24","cnas"]
+        subApps : ["autorite_sante","medecineCDG24","cdg24","cnas","synae"]
+      },
+
+      gouvernement_cias : {
+        id : "gouvernement_cias",
+        title : "Gestion Publique",
+        icon : "icons/ministere_justice.ico",
+        url: "#",
+        category: "applicationMetier",
+        isGroup: true,
+        subApps : ["gestion_publique","casier_judiciaire","ministere_justice","demarche_numerique","nova","sylae"]
+      },
+
+      carburant : {
+        id : "carburant",
+        title : "Energie",
+        icon : "icons/totalenergie.ico",
+        url: "#",
+        category: "applicationMetier",
+        isGroup: true,
+        subApps : ["total_energie","carte_carburant"]
       },
 
 
@@ -205,7 +225,7 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
       },
       listmonk: {
         id: "listmonk",
-        title: "Listmonk",
+        title: "NewsLetter",
         icon: "icons/listmonk.png",
         url: urls.listmonk,
         category: "applicationCommunes"
@@ -229,6 +249,13 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
         title: "Outlook",
         icon: "icons/outlook.ico",
         url: urls.outlook,
+        category: "applicationCommunes"
+      },
+      slow: {
+        id: "slow",
+        title: "S²low",
+        icon: "icons/slow.png",
+        url: urls.slow,
         category: "applicationCommunes"
       },
 
@@ -294,13 +321,6 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
         title: "Périgéo",
         icon: "icons/perigeo.ico",
         url: urls.perigeo,
-        category: "applicationMetier"
-      },
-      slow: {
-        id: "slow",
-        title: "S²low",
-        icon: "icons/slow.png",
-        url: urls.slow,
         category: "applicationMetier"
       },
       webdelib: {
@@ -686,6 +706,76 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
         title: "Immersion Facilitée",
         icon: "icons/ministere_justice.ico",
         url: urls.immersion_facilite,
+        category: "applicationMetier"
+      },
+      gestion_publique : {
+        id: "gestion_publique",
+        title: "Portail de la Gestion Publique",
+        icon: "icons/ministere_justice.ico",
+        url: urls.gestion_publique,
+        category: "applicationMetier"
+      },
+      ppas : {
+        id: "ppas",
+        title: "PPAS",
+        icon: "icons/ppas.png",
+        url : urls.ppas,
+        category: "applicationMetier"
+      },
+      nova : {
+        id: "nova",
+        title: "Nova",
+        icon: "icons/ministere_justice.ico",
+        url : urls.nova,
+        category: "applicationMetier"
+      },
+      geoclip : {
+        id : "geoclip",
+        title : "Geoclip - ORS",
+        icon : "icons/geoclip.jpg",
+        url : urls.geoclip,
+        category: "applicationMetier"
+      },
+      pdf24 : {
+        id : "pdf24",
+        title : "PDF24 - Tous les outils",
+        icon : "icons/pdf24.svg",
+        url : urls.pdf24,
+        category: "applicationMetier"
+      },
+      sylae : {
+        id : "sylae",
+        title : "SYLAE",
+        icon : "icons/ministere_justice.ico",
+        url : urls.sylae,
+        category: "applicationMetier"
+      },
+      synae : {
+        id : "synae",
+        title : "Synae | Haute Autorié Santé",
+        icon : "icons/autorite_sante.jpg",
+        url : urls.synae,
+        category: "applicationMetier"
+      },
+      casier_judiciaire : {
+        id : "casier_judiciare",
+        title : "Casier Judiciare",
+        icon : "icons/ministere_justice.ico",
+        url : urls.casier_judiciare,
+        category: "applicationMetier"
+      },
+      cnsa : {
+        id : "cnsa",
+        title : "CNSA",
+        icon : "icons/cnsa.jpg",
+        url : urls.cnsa,
+        category: "applicationMetier"
+      },
+      demarche_numerique : {
+        id : "demarche_numerique",
+        title : "Démarche Numérique",
+        icon : "icons/ministere_justice.ico",
+        url : urls.demarche_numerique,
         category: "applicationMetier"
       },
     };
