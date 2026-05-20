@@ -76,7 +76,7 @@ Pour ajouter des applications il faut :
         icon : "url de l'image de l'application",
         url : "url de redirection vers le site",
         category : "Catégorie de l'application" // Aller à l'étape "Ajout d'une catégorie" pour vous renseignez dessus
-    },
+    }
     ```
 
 - Ajouter l'id de votre application dans le fichier config.js
@@ -112,8 +112,8 @@ Pour ajouter des applications il faut :
         category : "Catégorie des applications du groupe" // Aller à l'étape "Ajout d'une catégorie" pour vous renseignez dessus
         isGroup : true,
         applications : ["Noms","des","applications"]
-    },
-    ```
+    }
+```
 
 ---
 
