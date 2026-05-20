@@ -469,6 +469,8 @@ header img.logo-sombre {
     font-weight: bold;
     font-size: 0.9em;
     margin-right: 25px; /* Espace pour l'étoile */
+    flex: 1;
+    text-align: center;
 }
 
 .sub-star-btn {
