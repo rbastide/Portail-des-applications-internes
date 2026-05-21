@@ -15,7 +15,7 @@ const structures = {
     },
     "cias": {
         name: "CIAS",
-        applications: ["mad","domatel","free2Move","sante","portail_ressources","arche_MC2_assistance","my_ayvens_manager","visualAA","carburant","net_entreprise","MNT","france_travail","urssaf_groupe","assurance","IRCEM","edenred","fabregue","collecteam","PEPS","CNFPT","indeed","gouvernement_cias","CNRACL","ppas","geoclip","pdf24","cnsa"].concat(commonTools)
+        applications: ["domatel","free2Move","sante","portail_ressources","arche_MC2_assistance","my_ayvens_manager","visualAA","carburant","net_entreprise","MNT","france_travail","urssaf_groupe","assurance","IRCEM","edenred","fabregue","collecteam","PEPS","CNFPT","indeed","gouvernement_cias","CNRACL","ppas","geoclip","pdf24","cnsa"].concat(commonTools)
     },
     "ml/mde": {
         name: "ML / MDE",

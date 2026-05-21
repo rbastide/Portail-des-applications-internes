@@ -63,7 +63,7 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
       },
       navigateurs:{
         id: "navigateurs",
-        title : "Navigateurs",
+        title : "Moteurs de recherches",
         icon : "icons/navigateurs.png",
         url: "#",
         category: "applicationCommunes",
@@ -281,13 +281,6 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
         url: urls.sirtaqui,
         category: "applicationMetier"
       },
-      mad: {
-        id: "mad",
-        title: "MAD",
-        icon: "icons/mad.png",
-        url: urls.mad,
-        category: "applicationMetier"
-      },
       i_milo: {
         id: "i_milo",
         title: "I-Milo",
@@ -335,13 +328,6 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
         title: "Domatel",
         icon: "icons/domatel.ico",
         url: urls.domatel,
-        category: "applicationMetier"
-      },
-      NFC_tag_and_play:{
-        id: "nfcTagAndPlay",
-        title: "NFC Tag And Play",
-        icon: "icons/nfcTagAndPlay.jpg",
-        url: "",
         category: "applicationMetier"
       },
       free2Move:{
