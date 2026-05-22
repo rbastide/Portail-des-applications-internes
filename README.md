@@ -31,7 +31,7 @@ cd Portail-des-applications-internes
 - Le fichier urls.json doit être créer au même emplacement que le fichier urls-example.json
 - Une astuce consiste à le copier, puis le coller, puis le renommer en urls.json
 
-- Modifier les urls ainsi que leurs noms pour qu'elle correspondent à vos applications
+- Modifier les urls ainsi que leurs noms pour qu'elles correspondent à vos applications
 
 --- 
 
@@ -214,17 +214,3 @@ const defaultStructure = "Nom de la structure à modifier";
 ### Ajouter les icons
 
 Dans le dossier images, ajoutez un dossier "icons" qui contiendra vos icons
-
-
-### Ajouter les liens
-
-Dans le dossier Scripts/data, copiez-collez le fichiers urls-example.json et renommez le urls.json.
-
-Pour ajouter les liens, ca se passe sous le format : 
-
-```json
-{
-    "id_de_l'application" : "lien de l'appli",
-    "id_de_l'application2" : "lien de l'appli2"
-}
-
