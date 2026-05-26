@@ -150,7 +150,7 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
       vehicule :{
         id: "vehicule",
         title : "Véhicule",
-        icon : "icons/vehicule.ico",
+        icon : "icons/vehicules.jpg",
         url : "#",
         category : "applicationMetier",
         isGroup : true,
@@ -790,14 +790,14 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
       modalis : {
         id : "modalis",
         title : "Modalis",
-        icon : "icons/modalis.ico",
+        icon : "icons/modalis.jpg",
         url : urls.modalis,
         category: "applicationMetier"
       },
       wanreport : {
         id : "wanreport",
         title : "Wanreport",
-        icon : "icons/wanreport.ico",
+        icon : "icons/wanreport.svg",
         url : urls.wanreport,
         category: "applicationMetier"
       },
@@ -811,16 +811,23 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
       kubapay_web : {
         id : "kubapay_web",
         title : "Kubapay Web",
-        icon : "icons/kubapay_web.ico",
+        icon : "icons/kubapay.png",
         url : urls.kubapay_web,
         category: "applicationMetier"
       },
       amazon_quick : {
         id : "amazon_quick",
         title : "Amazon Quick",
-        icon : "icons/amazon_quick.ico",
+        icon : "icons/amazon_quick.jpg",
         url : urls.amazon_quick,
         category: "applicationMetier"
+      },
+      accueil_glpi_perimouv: {
+        id : "accueil_glpi_perimouv",
+        title : "Accueil GLPI",
+        icon : "icons/accueil_glpi_perimouv.png",
+        url : urls.accueil_glpi_perimouv,
+        category : "applicationMetier"
       },
       observatoire_akka : {
         id : "observatoire_akka",
@@ -839,7 +846,7 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
       google_transit : {
         id : "google_transit",
         title : "Google Transit",
-        icon : "icons/google_transit.ico",
+        icon : "icons/google.png",
         url : urls.google_transit,
         category: "applicationMetier"
       },
@@ -853,7 +860,7 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
       lumiplay : {
         id : "lumiplay",
         title : "Lumiplay",
-        icon : "icons/lumiplay.ico",
+        icon : "icons/lumiplay.svg",
         url : urls.lumiplay,
         category: "applicationMetier"
       },
@@ -867,50 +874,64 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
       suivi_dechet_gouvernemental : {
         id : "suivi_dechet_gouvernemental",
         title : "Suivi Déchet",
-        icon : "icons/suivi_dechet.ico",
+        icon : "icons/ministere_justice.ico",
         url : urls.suivi_dechet_gouvernemental,
         category: "applicationMetier"
       },
       cbm_pieces_detachees : {
         id : "cbm_pieces_detachees",
         title : "Pièces Détachées",
-        icon : "icons/cbm_pieces_detachees.ico",
+        icon : "icons/cbm_pieces_detachees.png",
         url : urls.cbm_pieces_detachees,
+        category: "applicationMetier"
+      },
+      vetement_travail : {
+        id : "vetement_travail",
+        title : "Suivi Vêtement Travail",
+        icon : "icons/vetement_travail.png",
+        url : urls.vetement_travail,
         category: "applicationMetier"
       },
       suivi_borne_recharge_bus_elec : {
         id : "suivi_borne_recharge_bus_elec",
         title : "Borne de Recharge Bus Electrique",
-        icon : "icons/suivi_borne_recharge.ico",
+        icon : "icons/suivi_borne_recharge_bus_elec.ico",
         url : urls.suivi_borne_recharge_bus_elec,
         category: "applicationMetier"
       },
       constructeur_suivi_vehicules_electrique : {
         id : "constructeur_suivi_vehicules_electrique",
         title : "Suivi Véhicules électrique",
-        icon : "icons/constructeur_suivi_vehicules.ico",
+        icon : "icons/constructeur_suivi_vehicules.svg",
         url : urls.constructeur_suivi_vehicules_electrique,
         category: "applicationMetier"
       },
       glpi_kuba : {
         id : "glpi_kuba",
         title : "GLPI KUBA",
-        icon : "icons/glpi.png",
-        url : urls.glpi_kuba,
+        icon : "icons/distri_cash.png",
+        url : urls.distri_cash,
         category: "applicationMetier"
       },
       commande_pneumatique_vl : {
         id : "commande_pneumatique_vl",
         title : "Commande Pneumatique VL",
-        icon : "icons/commande_pneumatique.ico",
-        url : urls.commande_pneumatique_vl,
+        icon : "icons/distri_cash.png",
+        url : urls.distri_cash,
         category: "applicationMetier"
       },
       bca_suivi_sinistre : {
         id : "bca_suivi_sinistre",
         title : "BCA Sinistre Assurance",
-        icon : "icons/bca_suivi_sinistre.ico",
-        url : urls.bca_suivi_sinistre,
+        icon : "icons/distri_cash.png",
+        url : urls.distri_cash,
+        category: "applicationMetier"
+      },
+      isigeo : {
+        id : "isigeo",
+        title : "Isigeo",
+        icon : "icons/isigeo.jpg",
+        url : urls.isigeo,
         category: "applicationMetier"
       },
     };
