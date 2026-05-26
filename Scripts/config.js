@@ -6,12 +6,12 @@
 
 const commonTools = ["slow","annuaire","navigateurs","listmonk","assistance_info","editeur_pdf","gestionnaire_totp","microsoft_suite"];
 
-const allTools = ["gouvernements","i_milo","veloce","dude","manatime","nouvelle_aquitaine","france_travail_accueil","CAF","canva","ameli","AGEFIPH","CAP_metier","copilot","milona","sirtaqui","hawk_manager","hawk_rt","ciril_net","i_parapheur","webdelib","slow","domatel","free2Move","sante","portail_ressources","arche_MC2_assistance","my_ayvens_manager","visualAA","carburant","net_entreprise","MNT","france_travail","urssaf_groupe","assurance","IRCEM","edenred","fabregue","collecteam","PEPS","CNFPT","indeed","gouvernement_cias","CNRACL","ppas","geoclip","pdf24","cnsa"].concat(commonTools);
+const allTools = ["vehicule","hawk","ciril_net","i_parapheur","webdelib","modalis","wanreport","mobi_iti","kubapay_web","amazon_quick","observatoire_akka","lumiplan_help_center","google_transit","lumiplay","suivi_dechet_gouvernemental","suivi_borne_recharge_bus_elec","glpi_kuba","bca_suivi_sinistre","vetement_travail","domatel","free2Move","sante","portail_ressources","arche_MC2_assistance","my_ayvens_manager","visualAA","carburant","net_entreprise","MNT","france_travail","urssaf_groupe","assurance","IRCEM","edenred","fabregue","collecteam","PEPS","CNFPT","indeed","gouvernement_cias","CNRACL","ppas","geoclip","pdf24","cnsa","gouvernements","i_milo","veloce","dude","manatime","nouvelle_aquitaine","france_travail_accueil","CAF","canva","ameli","AGEFIPH","CAP_metier","copilot","milona","isigeo","sirtaqui"].concat(commonTools)
 
 const structures = {
     "perimouv": {
         name: "Périmouv",
-        applications: ["vehicule","hawk","ciril_net","i_parapheur","webdelib","slow","modalis","wanreport","mobi_iti","kubapay_web","amazon_quick","observatoire_akka","lumiplan_help_center","google_transit","lumiplay","suivi_dechet_gouvernemental","suivi_borne_recharge_bus_elec","glpi_kuba","bca_suivi_sinistre","vetement_travail"].concat(commonTools)
+        applications: ["vehicule","hawk","ciril_net","i_parapheur","webdelib","modalis","wanreport","mobi_iti","kubapay_web","amazon_quick","observatoire_akka","lumiplan_help_center","google_transit","lumiplay","suivi_dechet_gouvernemental","suivi_borne_recharge_bus_elec","glpi_kuba","bca_suivi_sinistre","vetement_travail"].concat(commonTools)
     },
     "cias": {
         name: "CIAS",
@@ -27,7 +27,7 @@ const structures = {
     },
     "oti":{
         name: "Oti",
-        applications : ["sirtaqui","ciril_net","i_parapheur","webdelib","slow"].concat(commonTools)
+        applications : ["sirtaqui","ciril_net","i_parapheur","webdelib"].concat(commonTools)
     },
     "common":{
         name:"Communs",
