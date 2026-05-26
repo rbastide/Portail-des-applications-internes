@@ -11,7 +11,7 @@ const allTools = ["gouvernements","i_milo","veloce","dude","manatime","nouvelle_
 const structures = {
     "perimouv": {
         name: "Périmouv",
-        applications: ["hawk_manager","hawk_rt","ciril_net","i_parapheur","webdelib","slow"].concat(commonTools)
+        applications: ["vehicule","hawk","ciril_net","i_parapheur","webdelib","slow","modalis","wanreport","mobi_iti","kubapay_web","amazon_quick","observatoire_akka","lumiplan_help_center","google_transit","lumiplay","suivi_dechet_gouvernemental","suivi_borne_recharge_bus_elec","glpi_kuba","bca_suivi_sinistre"].concat(commonTools)
     },
     "cias": {
         name: "CIAS",

@@ -32,7 +32,7 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
 
     applicationsMetadata = {
 
-      // Gouvernements
+      // Groupes
       gouvernements:{
         id: "gouvernements",
         title: "Gouvernements",
@@ -137,6 +137,29 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
         subApps : ["total_energie","carte_carburant"]
       },
 
+      hawk :{
+        id: "hawk",
+        title : "Hawk",
+        icon : "icons/hanover.ico",
+        url : "#",
+        category : "applicationMetier",
+        isGroup : true,
+        subApps : ["hawk_manager","hawk_rt","hawk_stats"]
+      },
+
+      vehicule :{
+        id: "vehicule",
+        title : "Véhicule",
+        icon : "icons/vehicule.ico",
+        url : "#",
+        category : "applicationMetier",
+        isGroup : true,
+        subApps : ["controle_technique_pl","cbm_pieces_detachees","constructeur_suivi_vehicules_electrique","commande_pneumatique_vl"]
+      },
+
+
+
+      
 
       // Applications communes
       duckduckgo: {
@@ -762,6 +785,132 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
         title : "Démarche Numérique",
         icon : "icons/ministere_justice.ico",
         url : urls.demarche_numerique,
+        category: "applicationMetier"
+      },
+      modalis : {
+        id : "modalis",
+        title : "Modalis",
+        icon : "icons/modalis.ico",
+        url : urls.modalis,
+        category: "applicationMetier"
+      },
+      wanreport : {
+        id : "wanreport",
+        title : "Wanreport",
+        icon : "icons/wanreport.ico",
+        url : urls.wanreport,
+        category: "applicationMetier"
+      },
+      mobi_iti : {
+        id : "mobi_iti",
+        title : "Mobi-iti",
+        icon : "icons/mobi_iti.ico",
+        url : urls.mobi_iti,
+        category: "applicationMetier"
+      },
+      kubapay_web : {
+        id : "kubapay_web",
+        title : "Kubapay Web",
+        icon : "icons/kubapay_web.ico",
+        url : urls.kubapay_web,
+        category: "applicationMetier"
+      },
+      amazon_quick : {
+        id : "amazon_quick",
+        title : "Amazon Quick",
+        icon : "icons/amazon_quick.ico",
+        url : urls.amazon_quick,
+        category: "applicationMetier"
+      },
+      observatoire_akka : {
+        id : "observatoire_akka",
+        title : "Observatoire-Akka",
+        icon : "icons/observatoire_akka.ico",
+        url : urls.observatoire_akka,
+        category: "applicationMetier"
+      },
+      lumiplan_help_center : {
+        id : "lumiplan_help_center",
+        title : "Lumiplan help center",
+        icon : "icons/lumiplan_help_center.ico",
+        url : urls.lumiplan_help_center,
+        category: "applicationMetier"
+      },
+      google_transit : {
+        id : "google_transit",
+        title : "Google Transit",
+        icon : "icons/google_transit.ico",
+        url : urls.google_transit,
+        category: "applicationMetier"
+      },
+      hawk_stats : {
+        id : "hawk_stats",
+        title : "Hawk Stats",
+        icon : "icons/hanover.ico",
+        url : urls.hawk_stats,
+        category: "applicationMetier"
+      },
+      lumiplay : {
+        id : "lumiplay",
+        title : "Lumiplay",
+        icon : "icons/lumiplay.ico",
+        url : urls.lumiplay,
+        category: "applicationMetier"
+      },
+      controle_technique_pl : {
+        id : "controle_technique_pl",
+        title : "Controle technique PL",
+        icon : "icons/controle_technique_pl.ico",
+        url : urls.controle_technique_pl,
+        category: "applicationMetier"
+      },
+      suivi_dechet_gouvernemental : {
+        id : "suivi_dechet_gouvernemental",
+        title : "Suivi Déchet",
+        icon : "icons/suivi_dechet.ico",
+        url : urls.suivi_dechet_gouvernemental,
+        category: "applicationMetier"
+      },
+      cbm_pieces_detachees : {
+        id : "cbm_pieces_detachees",
+        title : "Pièces Détachées",
+        icon : "icons/cbm_pieces_detachees.ico",
+        url : urls.cbm_pieces_detachees,
+        category: "applicationMetier"
+      },
+      suivi_borne_recharge_bus_elec : {
+        id : "suivi_borne_recharge_bus_elec",
+        title : "Borne de Recharge Bus Electrique",
+        icon : "icons/suivi_borne_recharge.ico",
+        url : urls.suivi_borne_recharge_bus_elec,
+        category: "applicationMetier"
+      },
+      constructeur_suivi_vehicules_electrique : {
+        id : "constructeur_suivi_vehicules_electrique",
+        title : "Suivi Véhicules électrique",
+        icon : "icons/constructeur_suivi_vehicules.ico",
+        url : urls.constructeur_suivi_vehicules_electrique,
+        category: "applicationMetier"
+      },
+      glpi_kuba : {
+        id : "glpi_kuba",
+        title : "GLPI KUBA",
+        icon : "icons/glpi.png",
+        url : urls.glpi_kuba,
+        category: "applicationMetier"
+      },
+      commande_pneumatique_vl : {
+        id : "commande_pneumatique_vl",
+        title : "Commande Pneumatique VL",
+        icon : "icons/commande_pneumatique.ico",
+        url : urls.commande_pneumatique_vl,
+        category: "applicationMetier"
+      },
+      bca_suivi_sinistre : {
+        id : "bca_suivi_sinistre",
+        title : "BCA Sinistre Assurance",
+        icon : "icons/bca_suivi_sinistre.ico",
+        url : urls.bca_suivi_sinistre,
         category: "applicationMetier"
       },
     };
