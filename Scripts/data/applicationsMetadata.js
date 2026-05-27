@@ -959,7 +959,7 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
         id : "PAACO",
         title : "PAACO Globule",
         icon : "icons/paaco.png",
-        url : urls.paaco,
+        url : urls.PAACO,
         category: "applicationMetier"
       }
     };
