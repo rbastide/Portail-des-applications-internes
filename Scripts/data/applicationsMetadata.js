@@ -114,7 +114,7 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
         url: "#",
         category: "applicationMetier",
         isGroup: true,
-        subApps : ["autorite_sante","medecineCDG24","cdg24","cnas","synae"]
+        subApps : ["autorite_sante","medecineCDG24","cdg24","cnas","synae","appel_medical","relai_sante","sante_publique","PAACO"]
       },
 
       gouvernement_cias : {
@@ -934,7 +934,36 @@ async function initializeMetadata(urlsPath = 'Scripts/data/urls.json') {
         url : urls.isigeo,
         category: "applicationMetier"
       },
+      appel_medical : {
+        id : "appel_medical",
+        title : "Appel Médical",
+        icon : "icons/appel_medical.ico",
+        url : urls.appel_medical,
+        category: "applicationMetier"
+      },
+      relai_sante : {
+        id : "relai_sante",
+        title : "Plateforme Rélai Santé",
+        icon : "icons/relai_sante.png",
+        url : urls.relai_sante,
+        category: "applicationMetier"
+      },
+      sante_publique : {
+        id : "sante_publique",
+        title : "Santé Publique France",
+        icon : "icons/sante_publique.svg",
+        url : urls.sante_publique,
+        category: "applicationMetier"
+      },
+      PAACO : {
+        id : "PAACO",
+        title : "PAACO Globule",
+        icon : "icons/paaco.png",
+        url : urls.paaco,
+        category: "applicationMetier"
+      }
     };
+
   } catch (error) {
     console.error("Impossible de charger les métadonnées des applications:", error);
   }
