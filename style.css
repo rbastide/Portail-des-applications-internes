@@ -524,7 +524,7 @@ footer .infos {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 300px;
+    gap: 280px;
     flex-wrap: wrap;
 }
 
