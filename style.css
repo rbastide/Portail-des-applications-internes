@@ -516,7 +516,7 @@ footer .logo-footer img {
     object-fit: contain;
 }
 
-footer .infos {
+footer .infos .gpInfos  {
     flex: 1;
     width: 100%;
     color: var(--white);
@@ -526,6 +526,18 @@ footer .infos {
     align-items: center;
     gap: 280px;
     flex-wrap: wrap;
+    padding: 100px;
+}
+footer .infos .serviceSiInfos {
+    flex: 1;
+    width: 100%;
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 60px;
 }
 
 footer .infos div {
