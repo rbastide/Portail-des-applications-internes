@@ -1,6 +1,6 @@
 // Données des structures
-// Sous la forme -> "nom de la structure" : {
-// name : "Nom de la strucutre a affiché",
+// Sous la forme → "nom de la structure" : {
+// name : "Nom de la structure a affiché",
 // applications : ["Tableau","Comportant","Les applications"],
 // },
 
@@ -45,24 +45,17 @@ const defaultStructure = "common";
 
 // Récupération de la structure dans la barre d'adresse
 // renvoie la structure complète
-// Si aucune structure n'a été trouvé elle renvoie la structure par défaut défini plus haut
+// Si aucune structure n'a été trouvé, elle renvoie la structure par défaut défini plus haut
 function getStructureInURL() {
   const params = new URLSearchParams(window.location.search);
-  const structure = params.get("structure") || defaultStructure;
-  return structure;
+    return params.get("structure") || defaultStructure;
 }
 
-// Renvoie les données de la structure concerné
-// Si aucune structure n'a été trouvé elle renvoie la structure par défaut défini plus haut
+// Renvoie les données de la structure concernée
+// Si aucune structure n'a été trouvé, elle renvoie la structure par défaut défini plus haut
 function getStructureConfig() {
   const structureId = getStructureInURL();
   return structures[structureId] || structures[defaultStructure];
-}
-
-// Vérifie si l'application doit être affichée
-function isApplicationInStructure(appId) {
-  const config = getStructureConfig();
-  return config.applications.includes(appId);
 }
 
 // Cette fonction s'exécute immédiatement au chargement du script.
