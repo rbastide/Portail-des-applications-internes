@@ -1,4 +1,4 @@
-// Affiche les favoris dans la section prévus a cet effect
+// Affiche les favoris dans la section prévus à cet effect
 function renderFavorites() {
     // Cherche la section favoris de la page
     const favoritesSection = document.querySelector('.favoris');
@@ -15,7 +15,7 @@ function renderFavorites() {
     favoritesContainer.innerHTML = '';
 
     // Recherche les éléments déjà favoris dans le localStorage
-    // Si aucun éléments trouvés, on créer une liste vide
+    // Si aucun éléments trouvés, on crée une liste vide
     const currentStructure = getStructureInURL();
     let favorites = JSON.parse(localStorage.getItem('favorites_' + currentStructure)) || [];
 
@@ -23,7 +23,7 @@ function renderFavorites() {
     const filterButton = Array.from(document.querySelectorAll('.button-filter')).find(btn => btn.textContent.toLowerCase().trim() === 'favoris');
     const filterOption = Array.from(document.querySelectorAll('.filter-choice option')).find(opt => opt.textContent.toLowerCase().trim() === 'favoris' || opt.value === 'favoris');
 
-    // Si la liste des favoris est vide on ne l'affiche pas
+    // Si la liste des favoris est vide, on ne l'affiche pas
     if (favorites.length === 0) {
         favoritesSection.style.display = 'none';
         if (filterButton) filterButton.style.display = 'none';
@@ -36,12 +36,12 @@ function renderFavorites() {
         if (activeFilterText === 'toutes' || activeFilterText === 'favoris') {
             favoritesSection.style.display = 'flex'; 
         }
-        // On réaffiche les filtres dans tous les cas puisqu'il y a des favoris
+        // On re-affiche les filtres dans tous les cas puisqu'il y a des favoris
         if (filterButton) filterButton.style.display = '';
         if (filterOption) filterOption.style.display = '';
     }
 
-    // Parcours toutes les icônes d'étoiles et si l'application correspondante est dans la liste
+    // Parcours toutes les icônes d'étoiles et si l'application correspondante est dans la liste.
     // Il l'affiche en doré
     const allStars = document.querySelectorAll('.star-btn');
     allStars.forEach(star => {
