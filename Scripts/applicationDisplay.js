@@ -1,4 +1,4 @@
-// Affiche les applications d'une catégorie filtrées par la catégrorie
+// Affiche les applications d'une catégorie filtrées par la catégorie
 function displayApplications(category) {
   const config = getStructureConfig();
   const container = document.querySelector(`.apps-container[aria-placeholder="${category}-placeholder"]`);
@@ -130,7 +130,7 @@ function loadApplicationsByStructure() {
 }
 
 
-// S'éxécute au chargement de la page -> affiche les applications selon la structure 
+// S'exécuté au chargement de la page → affiche les applications selon la structure
 function initializeApplications() {
   loadApplicationsByStructure();
   
