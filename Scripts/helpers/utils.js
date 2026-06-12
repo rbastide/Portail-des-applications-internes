@@ -1,7 +1,6 @@
 // Récupère le texte de la barre de recherche
 function getTextSearchBar(){
-    var text = document.getElementById("research").value;
-    return text;
+    return document.getElementById("research").value;
 }
 
 // Recherche sur DuckDuckGo le texte saisi par l'utilisateur
@@ -14,7 +13,7 @@ function researchOnDuckDuckGo(){
     }
     else{
       window.open(url, "_blank");
-    };
+    }
 
     document.getElementById("research").value = "";
 }
@@ -34,25 +33,4 @@ function toggleCategory(button) {
 
     button.classList.toggle('collapsed');
     appsContainer.classList.toggle('closed');
-}
-
-// Gère la fermeture/ouverture du menu déroulant de la catégorie favoris
-function toggleFavorite(event,appId){
-
-    event.preventDefault();
-    event.stopPropagation();
-
-    const currentStructure = getStructureInURL();
-    const storageKey = 'favorites_' + currentStructure;
-
-    let favorites = JSON.parse(localStorage.getItem(storageKey)) || [];
-
-    if(favorites.includes(appId)){
-        favorites = favorites.filter(id => id !== appId);
-    } else {
-        favorites.push(appId);
-    }
-    localStorage.setItem(storageKey, JSON.stringify(favorites));
-    renderFavorites();
-
 }
